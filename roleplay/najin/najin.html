@@ -22,6 +22,8 @@
 
   <!-- Main CSS File -->
   <link href="../../assets/css/main.css" rel="stylesheet">
+
+  <script src="../../assets/js/najin.js"></script>
 </head>
 
 <body class="index-page d-flex flex-column min-vh-100">
@@ -48,10 +50,49 @@
 
   <main class="main flex-grow-1 bg-dark">
     <div class="row mt-4">
-      <div class="col-lg-3 col-1"></div>
-      <div class="col-lg-6 col-10">
+      <div class="col-lg-2 col-1"></div>
+      <div class="col-lg-8 col-10">
+        <div class="card caracter-card">
+          <div class="row g-0">
+            <div class="col-md-4 position-relative" style="height: inherit; overflow: hidden;">
+              <div id="memeImage" class="d-none w-100">
+                <div class="figure w-100">
+                  <img class="image-main"  src="../../images/najin/memepart_1.png" srcset="../../images/najin/memepart_1.png" alt="...">
+                  <img class="image-hover" src="../../images/najin/memepart_2.png" srcset="../../images/najin/memepart_2.png" alt="...">
+                </div>
+              </div>
+              <img id="profileImage" style="height: 100%;" src="../../images/najin/najinCard.webp" class="w-100 img-fluid rounded-start" alt="...">
+              <div class="position-absolute bottom-0 start-0 px-3 w-100">
+                <audio id="ost" controls loop style="width: inherit;">
+                  <source src="../../assets/musique/Limbus Company - Canto III Battle Theme D1.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-8 pb-0 d-flex flex-column">
+              <div class="card-body flex-grow-1">
+                <h5 class="card-title text-white mb-4">Najin Lionheart</h5>
+                <div class="row">
+                  <p class="card-text col-md-4 col-sm-6"><span class="fw-bold">Race :</span> Humain</p>
+                  <p class="card-text col-md-4 col-sm-6"><span class="fw-bold">Sexe :</span> Masculin</p>
+                  <p class="card-text col-md-4 col-sm-6"><span class="fw-bold">Age :</span> 22 ans</p>
+                </div>
+                <div class="row">
+                  <p class="card-text col-sm-6"><span class="fw-bold">Faction :</span> Pirates</p>
+                  <p class="card-text col-sm-6"><span class="fw-bold">Rang :</span> Matelot</p>
+                </div>
+              </div>
+              <img style="width: 100%;" src="../../images/najin/footerProfile.png" class="img-fluid mt-auto" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card caracter-card mt-5 p-1 d-flex justify-content-center">
+            <img class="w-100" src="../../images/najin/styleTitre.png" alt="">
+          </div>
+        </div>
       </div>
-      <div class="col-lg-3 col-1"></div>
+      <div class="col-lg-2 col-1"></div>
     </div>
   </main>
 

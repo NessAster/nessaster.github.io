@@ -1619,9 +1619,43 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.caracter-card {
+  background-color: black;
+}
+
+.caracter-card .card-img-top{
+  height: 350px; 
+  overflow: hidden;
+}
+
+.caracter-card img{
+  width: inherit;
+}
+
+/*  Rollover image styles  */
+.figure {
+  position: relative;
+  width: 360px;
+  max-width: 100%;
+}
+
+.figure .image-main {
+  width: inherit;
+}
+
+.figure img.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+  width: inherit;
+}
+
+.figure:hover img.image-hover {
+  opacity: 1;
+  width: inherit;
 }
