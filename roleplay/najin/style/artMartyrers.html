@@ -23,7 +23,8 @@
   <!-- Main CSS File -->
   <link href="../../../assets/css/main.css" rel="stylesheet">
 
-  <script src="../../../assets/js/najin-art.js"></script>
+  <script src="../../../assets/js/menu-card.js"></script>
+  <script src="../../assets/js/audio-set.js"></script>
 </head>
 
 <body class="index-page d-flex flex-column min-vh-100">
@@ -52,9 +53,9 @@
     <div class="row mt-4">
       <div class="col-lg-2 col-1"></div>
       <div class="col-lg-8 col-10">
-				<div class="card caracter-card ">
+				<div class="card caracter-card">
 					<a href="../najin.html" class=" w-100 p-2">
-						<img src="../../../images/najin/backtoprofile.png" alt="">
+						<img src="../../../images/najin/backtoprofile.png" style="width: inherit;" alt="">
 					</a>
 				</div>
 
@@ -77,22 +78,22 @@
               <!-- <img id="profileImage" style="height: 100%;" src="../../images/najin/najinCard.webp" class="w-100 img-fluid rounded-start" alt="..."> -->
               <div class="position-absolute bottom-0 start-0 px-3 w-100"> 
                 <audio id="ost" controls loop style="width: inherit;">
-                  <source src="../../../assets/musique/Limbus Company - Audite Pauper & Vovete Miserias.mp3" type="audio/mpeg">
+                  <source src="../../../assets/musique/najin/Limbus Company - Audite Pauper & Vovete Miserias.mp3" type="audio/mpeg">
                 </audio>
 							</div>
             </div>
           </div>
         </div>
-        <div id="techniqueCard" class="card caracter-card my-3">
+        <div id="targetCard" class="card caracter-card my-3" data-selected="border-danger" data-unselected="border-white">
           <div class="card-body">
             <div class="row gap-1">
-              <div role="button" class="card-text col border-bottom border-white border-1 artMenu text-center" data-target="accumulation"><span class="fw-bold">Technique 1 :</span> Accumulation</div>
-              <div role="button" class="card-text col border-bottom border-white border-1 artMenu text-center" data-target="souffrance"><span class="fw-bold">Technique 2 :</span> Souffrance</div>
+              <div role="button" class="card-text col border-bottom border-white border-1 cardMenu text-center" data-target="accumulation"><span class="fw-bold">Technique 1 :</span> Accumulation</div>
+              <div role="button" class="card-text col border-bottom border-white border-1 cardMenu text-center" data-target="souffrance"><span class="fw-bold">Technique 2 :</span> Souffrance</div>
             </div>
             <div class="row gap-1 mt-2 pb-3">
-              <div role="button" class="card-text col border-bottom border-white border-1 artMenu text-center" data-target="sacrifice"><span class="fw-bold">Technique 3 : Sacrifice</span> </div>
-              <div role="button" class="card-text col border-bottom border-white border-1 artMenu text-center" data-target="tolerance"><span class="fw-bold">Technique 4 :</span> Tolérance</div>
-              <div role="button" class="card-text col border-bottom border-white border-1 artMenu text-center" data-target="renaissance"><span class="fw-bold">Technique 5 :</span> Renaissance</div>
+              <div role="button" class="card-text col border-bottom border-white border-1 cardMenu text-center" data-target="sacrifice"><span class="fw-bold">Technique 3 : Sacrifice</span> </div>
+              <div role="button" class="card-text col border-bottom border-white border-1 cardMenu text-center" data-target="tolerance"><span class="fw-bold">Technique 4 :</span> Tolérance</div>
+              <div role="button" class="card-text col border-bottom border-white border-1 cardMenu text-center" data-target="renaissance"><span class="fw-bold">Technique 5 :</span> Renaissance</div>
             </div>
             <div id="accumulation" class="d-none">
               <span class="text-danger fw-bold">Cette marque représente l'accumulation de sa rage durant ses années torturé, elle est représentée par une marque de griffes au fer rouge qu'il a à l'épaule droite.</span>
@@ -106,7 +107,9 @@
             </div>
             <div id="sacrifice" class="d-none">
               <span class="text-danger fw-bold">Cette troisième marque, marqué au fer rouge d'une main avec en son centre deux triangle se faisant dos, étant le sacrifice qu'il a été pour ses camarades</span>
-              Cette marque est encore une fois la preuve de son sacrifice
+              Cette marque est encore une fois la preuve de son sacrifice. Un sacrifice qui lui permet de marqué jusqu'à deux personnes avec chacun des triangle sur la marque.
+              Laissant alors cette dernière se former sur le corps d'une personne que Najin aura touché, Najin se lie alors à ces dernières est redirige alors 50 %
+              par marque des dégâts que la ou les personnes marquées subissent. Il peut effectivement mettre les deux marque sur une personnne pour encaisser l'entièreté des coups non mortelle à sa place.
             </div>
             <div id="tolerance" class="d-none">
               <span class="text-danger fw-bold">Cette quatrième marque est la représentation de sa tolérance la douleur durant ces différentes années.

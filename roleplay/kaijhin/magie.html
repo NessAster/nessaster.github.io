@@ -23,8 +23,8 @@
   <!-- Main CSS File -->
   <link href="../../assets/css/main.css" rel="stylesheet">
 
-  <script src="../../assets/js/najin.js"></script>
   <script src="../../assets/js/audio-set.js"></script>
+  <script src="../../assets/js/menu-card.js"></script>
 </head>
 
 <body class="index-page d-flex flex-column min-vh-100">
@@ -53,45 +53,49 @@
     <div class="row mt-4">
       <div class="col-lg-2 col-1"></div>
       <div class="col-lg-8 col-10">
-        <div class="card caracter-card">
-          <div class="row g-0">
-            <div class="col-md-4 position-relative" style="height: inherit; overflow: hidden;">
-              <div id="memeImage" class="d-none w-100">
-                <div class="figure w-100">
-                  <img class="image-main"  src="../../images/najin/memepart_1.png" srcset="../../images/najin/memepart_1.png" alt="...">
-                  <img class="image-hover" src="../../images/najin/memepart_2.png" srcset="../../images/najin/memepart_2.png" alt="...">
-                </div>
-              </div>
-              <img id="profileImage" style="height: 100%;" src="../../images/najin/najinCard.webp" class="w-100 img-fluid rounded-start" alt="...">
-              <div class="position-absolute bottom-0 start-0 px-3 w-100">
-                <audio id="ost" controls loop style="width: inherit;">
-                  <source src="../../assets/musique/najin/Limbus Company - Canto III Battle Theme D1.mp3" type="audio/mpeg">
-                </audio>
-              </div>
+        <div class="mb-3">
+					<a href="./kaijhin.html" class=" w-100 p-2">
+            <div class="figure w-100">
+              <img class="image-main"  src="../../images/kaijhin/backProfile.svg" srcset="../../images/kaijhin/backProfile.svg" alt="">
+              <img class="image-hover" src="../../images/kaijhin/backProfileHover.svg" srcset="../../images/kaijhin/backProfileHover.svg" alt="">
             </div>
-            <div class="col-md-8 pb-0 d-flex flex-column">
-              <div class="card-body flex-grow-1">
-                <h4 class="card-title text-white mb-4"><span class="text-danger fw-bold">Najin</span> Lionheart</h4>
-                <div class="row">
-                  <p class="card-text col-md-4 col-sm-6 text-danger"><span class="text-white fw-bold">Race :</span> Humain</p>
-                  <p class="card-text col-md-4 col-sm-6 text-danger"><span class="text-white fw-bold">Sexe :</span> Masculin</p>
-                  <p class="card-text col-md-4 col-sm-6 text-danger"><span class="text-white fw-bold">Age :</span> 22 ans</p>
-                </div>
-                <div class="row">
-                  <p class="card-text col-sm-6 text-danger"><span class="text-white fw-bold">Faction :</span> Pirates</p>
-                  <p class="card-text col-sm-6 text-danger"><span class="text-white fw-bold">Rang :</span> Matelot</p>
-                </div>
-              </div>
-              <img style="width: 100%;" src="../../images/najin/footerProfile.png" class="img-fluid mt-auto" alt="...">
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-3">
+					</a>
+				</div>
+        <div class="mb-3">
           <div class="card caracter-card mt-5 p-1 d-flex justify-content-center">
-            <a href="./style/artMartyrers.html">
-              <img class="w-100" src="../../images/najin/artTitre.png" style="width: inherit;" alt="">
-            </a>
+            <div class="card-header">
+              <div class="card-title text-center fw-bold text-white">Kaïjhin possède une quantité de 5 000 de mana.</div>
+            </div>
+            <div id="targetCard" class="card caracter-card" data-selected="border-white" data-unselected="border-muted">
+              <div class="card-body">
+                <div class="row gap-1 pb-3">
+                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="offensif"><span class="fw-bold">Offensif</span></div>
+                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="physique"><span class="fw-bold">Physique</span></div>
+                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="equipement"><span class="fw-bold">Équipement</span></div>
+                </div>
+                <div id="offensif" class="d-none text-justify text-light">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div>
+                        <span class="text-decoration-underline">Nom du sort :</span> Sort offensif
+                      </div>
+                      <div>
+                        <span class="text-decoration-underline">Type de sort :</span> Offensif
+                      </div>
+                      <div>
+                        <span class="text-decoration-underline">Consommation de mana :</span> N'utilise pas de quantité astronomique de mana contrairement à certains sorts.
+                      </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                  </div>
+                </div>
+                <div id="physique" class="d-none text-justify text-light">
+                </div>
+                <div id="equipement" class="d-none text-justify text-light">
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

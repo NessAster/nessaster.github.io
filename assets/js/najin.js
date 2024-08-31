@@ -10,8 +10,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         memeImage.classList.add("d-none");
         profileImage.classList.remove("d-none");
     });
-
-    let audio = document.getElementById("ost");
-    audio.volume = 0.2;
-    audio.play();
 })

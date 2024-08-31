@@ -1624,12 +1624,8 @@ section,
 }
 
 .caracter-card .card-img-top{
-  height: 350px; 
+  /* height: 350px;  */
   overflow: hidden;
-}
-
-.caracter-card img{
-  width: inherit;
 }
 
 /*  Rollover image styles  */
@@ -1658,4 +1654,13 @@ section,
 .figure:hover img.image-hover {
   opacity: 1;
   width: inherit;
+}
+
+.figure:hover img.image-main {
+  opacity: 0;
+  width: inherit;
+}
+
+.border-muted {
+  border-color: #4e4e4e !important;
 }
