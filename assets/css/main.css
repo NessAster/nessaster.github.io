@@ -1664,3 +1664,7 @@ section,
 .border-muted {
   border-color: #4e4e4e !important;
 }
+
+#targetCard #cardContaineur {
+  overflow: hidden;
+}

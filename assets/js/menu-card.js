@@ -18,7 +18,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             element.classList.add(selected);
             element.classList.remove(unselected);
-            document.querySelector("#" + element.dataset.target).classList.remove("d-none");
+            let target = document.querySelector("#" + element.dataset.target);
+            target.classList.remove("d-none");
+            target.animate(
+                [
+                    // étapes/keyframes
+                    { transform: "translateY(-100%)"   },
+                    { transform: "translateY(0px)" },
+                ],
+                {
+                    // temporisation
+                    duration: 1000,
+                    iterations: 1,
+                },
+            );
         });
     });
 });

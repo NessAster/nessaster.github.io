@@ -66,33 +66,310 @@
             <div class="card-header">
               <div class="card-title text-center fw-bold text-white">Kaïjhin possède une quantité de 5 000 de mana.</div>
             </div>
-            <div id="targetCard" class="card caracter-card" data-selected="border-white" data-unselected="border-muted">
+            <div id="targetCard" class="card caracter-card bg-light text-dark" data-selected="border-3" data-unselected="border-1">
               <div class="card-body">
                 <div class="row gap-1 pb-3">
                   <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="offensif"><span class="fw-bold">Offensif</span></div>
-                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="physique"><span class="fw-bold">Physique</span></div>
-                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="equipement"><span class="fw-bold">Équipement</span></div>
+                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="defensif"><span class="fw-bold">Défensif</span></div>
+                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="localisation"><span class="fw-bold">Localisation</span></div>
                 </div>
-                <div id="offensif" class="d-none text-justify text-light">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <span class="text-decoration-underline">Nom du sort :</span> Sort offensif
+                <div class="row gap-1 pb-3">
+                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="doppelschmetterling"><span class="fw-bold">Doppelschmetterling</span></div>
+                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="eisfeuer"><span class="fw-bold">Eisfeuer</span></div>
+                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="vol"><span class="fw-bold">Vol</span></div>
+                </div>
+                <div class="row gap-1 pb-3">
+                  <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="freischutz "><span class="fw-bold">Freischütz </span></div>
+                </div>
+                <div id="cardContaineur">
+                  <div id="offensif" class="d-none text-justify">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Nom du sort :</span>
+                          <div class="ms-3">
+                            Sort offensif
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Type de sort :</span>
+                          <div class="ms-3">
+                            Offensif
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Consommation de mana :</span>
+                          <div class="ms-3">
+                            N'utilise pas de quantité astronomique de mana contrairement à certains sorts.
+                          </div>
+                        </div>
+                        <img src="../../images/kaijhin/inteserction.svg" alt="">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Moyen d’apprentissage :</span>
+                          <div class="ms-3">
+                            Le sort offensif de base est l'un des plus couramment utilisés Les débutants commencent généralement par apprendre ce sort s'ils souhaitent se battre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <img class="w-100 border border-2 border-dark" style="border-radius: 0px 0px 0px 50px;" src="https://animesum.com/wp-content/uploads/2024/04/SouFrie_21_1-700x385-1.webp" alt="sort offensif">
                       </div>
                       <div>
-                        <span class="text-decoration-underline">Type de sort :</span> Offensif
-                      </div>
-                      <div>
-                        <span class="text-decoration-underline">Consommation de mana :</span> N'utilise pas de quantité astronomique de mana contrairement à certains sorts.
+                        <span class="text-decoration-underline fw-bold">Description :</span>
+                        <div class="ms-3">
+                          L'attaque est assez rapide à lancer avec une bonne maîtrise du mana. Ce sort n'utilise pas de quantité astronomique de mana contrairement à certains sorts. En bref, c'est le plus basique des sorts du répertoire des humains.
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-6"></div>
                   </div>
-                </div>
-                <div id="physique" class="d-none text-justify text-light">
-                </div>
-                <div id="equipement" class="d-none text-justify text-light">
-
+                  <div id="defensif" class="d-none text-justify">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Nom du sort :</span>
+                          <div class="ms-3">
+                            Sort défensif
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Type de sort :</span>
+                          <div class="ms-3">
+                            Défensif
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Consommation de mana :</span>
+                          <div class="ms-3">
+                            La consommation de mana peut vite épuisé le mage qui utilise ce sort.
+                          </div>
+                        </div>
+                        <img src="../../images/kaijhin/inteserction.svg" alt="">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Moyen d’apprentissage :</span>
+                          <div class="ms-3">
+                            Le sort défensif de base est l'un des plus couramment utilisés. Les débutants commencent généralement par apprendre ce sort s'ils souhaitent se battre.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <img class="w-100 border border-2 border-dark" style="border-radius: 0px 0px 0px 50px;" src="https://www.anime-evo.net/wp-content/uploads/2024/01/SouFrie_19_1.jpg" alt="sort defensif">
+                      </div>
+                      <div>
+                        <span class="text-decoration-underline fw-bold">Description :</span>
+                        <div class="ms-3">
+                          Ce sort permet de créer une barrière magique sous forme d’hexagone qui peuvent se cumuler afin de créer une protection magique. Cette protection est très efficace contre les sorts offensif, mais peu contre les attaques physique.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="localisation" class="d-none text-justify">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Nom du sort :</span>
+                          <div class="ms-3">
+                            Localisation
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Type de sort :</span>
+                          <div class="ms-3">
+                            Utilitaire
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Consommation de mana :</span>
+                          <div class="ms-3">
+                            La consommation de mana nécessaire pour ce sort peut varier. Généralement, il en consomme peu.
+                          </div>
+                        </div>
+                        <img src="../../images/kaijhin/inteserction.svg" alt="">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Moyen d’apprentissage :</span>
+                          <div class="ms-3">
+                            Ce sort peut être appris assez facilement puisqu'on le trouve dans la plupart des grimoires.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <img class="w-100 border border-2 border-dark" style="border-radius: 0px 0px 0px 50px;" src="../../images/kaijhin/Localisation.webp" alt="sort de localisation">
+                      </div>
+                      <div>
+                        <span class="text-decoration-underline fw-bold">Description :</span>
+                        <div class="ms-3">
+                          Permet d'illuminer un objet perdu après avoir placé un peu de mana dessus. Plus la quantité de mana placée sur cet objet est grande, plus il sera facile à retrouver et à distinguer.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="doppelschmetterling" class="d-none text-justify">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Nom du sort :</span>
+                          <div class="ms-3">
+                            Doppelschmetterling
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Type de sort :</span>
+                          <div class="ms-3">
+                            Offensif
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Consommation de mana :</span>
+                          <div class="ms-3">
+                            N'utilise pas de grande quantité de mana. Mais il en consomme légèrement plus qu’un sort offensif.
+                          </div>
+                        </div>
+                        <img src="../../images/kaijhin/inteserction.svg" alt="">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Moyen d’apprentissage :</span>
+                          <div class="ms-3">
+                            Ce sort provient de la famille Perhosia. Il faut donc l’apprendre d’un des membres de cette famille.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <img class="w-100 border border-2 border-dark" style="border-radius: 0px 0px 0px 50px;" src="https://static.wikia.nocookie.net/library-of-ruina/images/8/85/CardGuidingHandArt.png/revision/latest?cb=20201020020559" alt="sort Doppelschmetterling">
+                      </div>
+                      <div>
+                        <span class="text-decoration-underline fw-bold">Description :</span>
+                        <div class="ms-3">
+                          Ce sort est très similaire au sort offensif, à la différence prêt que le rayon est concentré en un point qui prend la forme d’un papillon (de lumière).
+                          Cependant, ce sort possède une autre particularité, qui est de créer deux types de projectiles. Les papillons blanc, agissant comme un sort offensif lambda et les papillons noir très peu efficace contre la matière physique, mais aggissant comme de la matière physique contre les sorts. Donc très efficace contre les sorts notamment défensifs. Mais si les deux types de projectile sont utilisé simultanément, alors cela lui demandera deux fois plus de mana qu'un sort offensif par papillons.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="eisfeuer" class="d-none text-justify">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Nom du sort :</span>
+                          <div class="ms-3">
+                            Eisfeuer
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Type de sort :</span>
+                          <div class="ms-3">
+                            Offensif/Utilitaire
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Consommation de mana :</span>
+                          <div class="ms-3">
+                            Ce sort consomme deux fois plus qu'un sort offensif
+                          </div>
+                        </div>
+                        <img src="../../images/kaijhin/inteserction.svg" alt="">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Moyen d’apprentissage :</span>
+                          <div class="ms-3">
+                            Cette technique est inventée par Kaïjhin depuis un sort de sa propre famille, il est donc le seul à pouvoir transmettre ce sort.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <img class="w-100 border border-2 border-dark" style="border-radius: 0px 0px 0px 50px;" src="../../images/kaijhin/icenfire.png" alt="sort Eisfeuer">
+                      </div>
+                      <div>
+                        <span class="text-decoration-underline fw-bold">Description :</span>
+                        <div class="ms-3">
+                          Ce sort consiste à créer des papillons de feu ou de glace à la place des papillon blanc ou noir de Doppelschmetterling. Il ne peut cependant utiliser qu'un seul type de papillon à la fois. 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="vol" class="d-none text-justify">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Nom du sort :</span>
+                          <div class="ms-3">
+                            Vol
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Type de sort :</span>
+                          <div class="ms-3">
+                            Utilitaire
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Consommation de mana :</span>
+                          <div class="ms-3">
+                            Ce sort consomme vraiment peu de mana.
+                          </div>
+                        </div>
+                        <img src="../../images/kaijhin/inteserction.svg" alt="">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Moyen d’apprentissage :</span>
+                          <div class="ms-3">
+                            Sort enseigné depuis la nuit des temps.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <img class="w-100 border border-2 border-dark" style="border-radius: 0px 0px 0px 50px;" src="https://64.media.tumblr.com/024d00a2a0337cb55bb72a8d57aa3966/ba6bbdfb52ae0db0-5c/s540x810/18c4346b45d7a09c950ba34a8e63a5574c330c2c.gif" alt="sort Eisfeuer">
+                      </div>
+                      <div>
+                        <span class="text-decoration-underline fw-bold">Description :</span>
+                        <div class="ms-3">
+                          Le sort permet à son utilisateur de voler. Tout simplement.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="freischutz" class="d-none text-justify">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Nom du sort :</span>
+                          <div class="ms-3">
+                            Freischütz 
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Type de sort :</span>
+                          <div class="ms-3">
+                            Offensif
+                          </div>
+                        </div>
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Consommation de mana :</span>
+                          <div class="ms-3">
+                            Consomme 140 de mana par portail, pour un maximum de 980.
+                          </div>
+                        </div>
+                        <img src="../../images/kaijhin/inteserction.svg" alt="">
+                        <div>
+                          <span class="text-decoration-underline fw-bold">Moyen d’apprentissage :</span>
+                          <div class="ms-3">
+                            Cette technique est inventée par Kaïjhin depuis un sort de sa propre famille, il est donc le seul à pouvoir transmettre ce sort.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <img class="w-100 border border-2 border-dark" style="border-radius: 0px 0px 0px 50px;" src="https://static.wikia.nocookie.net/library-of-ruina/images/a/a5/CardMagicBulletArt.png/revision/latest?cb=20200830203133" alt="sort Eisfeuer">
+                      </div>
+                      <div>
+                        <span class="text-decoration-underline fw-bold">Description :</span>
+                        <div class="ms-3">
+                          Ce sort consiste à créer une succession de cercles magiques devant soi où le dernier plus éloigné est un portail.
+                          On pourrait facilement apparenter ce sort à un railgun. Ces cercles concentre du mana pour créer aux centres une accélération,
+                          il ne suffit alors plus qu’à lancer un sort ou un objet dans cette chaîne de cercles doublant la force de ce dernier pour chaque cercle traversé,
+                          mais au delà de 6 cercles d’accélérations, le sort viendra détonner devant l’utilisateur. Et quand le dernier cercle est atteint par l’objet ou le sort,
+                          tout les cercles se refermer sur le dernier avant de disparaître. Et au moment où ce dernier viendra disparaître,
+                          que les cercles viendront réapparaître dans un rayon de 10 mètres, laissant les cercles se détacher et projet le sort dans la direction voulu par le lancer.
+                          Le portail ne marche que si le sort où l’objet à traverser les autres cercles. Ce qui fait qu’il ne peut pas se servir de sort pour rediriger un sort de front.
+                          De plus ce sort ne marche pas sur des objets plus gros qu’un ballon. Pour finir, utiliser ce sort rend inutilisable la magie pendant un certain temps selon le nombre de cercle utilisé.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
