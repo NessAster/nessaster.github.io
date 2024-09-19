@@ -22,6 +22,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <script src="assets/js/menu-card.js"></script>
 </head>
 
 <body class="index-page d-flex flex-column min-vh-100">
@@ -49,40 +51,61 @@
   <main class="main flex-grow-1 bg-dark">
     <div class="row mt-4">
       <div class="col-lg-3 col-1"></div>
-      <div class="col-lg-6 col-10">
-        <div class="row">
-          <div class="col-sm-6 col-12 mb-2">
-            <a href="roleplay/dice/dice.html">
-              <div class="card caracter-card ">
-                <img class="card-img-top" alt="Dice" src="https://preview.redd.it/data-zahard-has-a-red-three-eyes-markings-on-his-left-eye-v0-k6b9ekp10uc81.jpg?width=750&format=pjpg&auto=webp&s=96139dbbf7d5a05bef9eac45de699c44307182d9">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: rgb(255, 255, 255);">Dice Mazino</h5>
-                  <p class="card-text" style="color: rgb(179, 0, 0);">"Rien ne se perd, rien ne se créer, tout se transforme."</p>
+      <div class="col-lg-6 col-10 d-flex flex-column gap-5">
+        <div id="targetCard" class="card bg-gray" data-selected="text-warning" data-unselected="text-white">
+          <div class="card-body">
+            <div class="row gap-1 pb-3 mb-3 border-1 border-bottom border-white">
+              <div role="button" class="card-text col text-white cardMenu text-center" data-target="akarui"><span class="fw-bold h2">Akarui Machi</span></div>
+              <div role="button" class="card-text col text-white cardMenu text-center" data-target="kdz"><span class="fw-bold h2">King's Dawn Zero</span></div>
+              <div role="button" class="card-text col text-white cardMenu text-center" data-target="frieren"><span class="fw-bold h2">Frieren</span></div>
+            </div>
+            <div id="cardContaineur">
+              <div id="akarui" class="d-none">
+                <div class="row">
+                  <div class="col-sm-6 col-12 mb-2">
+                    <a href="roleplay/dice/dice.html">
+                      <div class="card caracter-card ">
+                        <img class="card-img-top" alt="Dice" src="https://preview.redd.it/data-zahard-has-a-red-three-eyes-markings-on-his-left-eye-v0-k6b9ekp10uc81.jpg?width=750&format=pjpg&auto=webp&s=96139dbbf7d5a05bef9eac45de699c44307182d9">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: rgb(255, 255, 255);">Dice Mazino</h5>
+                          <p class="card-text" style="color: rgb(179, 0, 0);">"Rien ne se perd, rien ne se créer, tout se transforme."</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="col-sm-6 col-12 mb-2">
-            <a href="roleplay/najin/najin.html">
-              <div class="card caracter-card ">
-                <img class="card-img-top" alt="Najin" src="images/najin/najinProfil.webp">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: rgb(255, 255, 255);">Najin</h5>
-                  <p class="card-text" style="color: rgb(235, 199, 0);">"La justice protège le peuple. Mais qui protège la justice ?"</p>
+              <div id="kdz" class="d-none">
+                <div class="row">
+                  <div class="col-sm-6 col-12 mb-2">
+                    <a href="roleplay/najin/najin.html">
+                      <div class="card caracter-card ">
+                        <img class="card-img-top" alt="Najin" src="images/najin/najinProfil.webp">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: rgb(255, 255, 255);">Najin</h5>
+                          <p class="card-text" style="color: rgb(235, 199, 0);">"La justice protège le peuple. Mais qui protège la justice ?"</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="col-sm-6 col-12 mb-2">
-            <a href="roleplay/kaijhin/kaijhin.html">
-              <div class="card caracter-card ">
-                <img class="card-img-top" alt="Kaijhin" src="images/kaijhin/kaijhinProfile.webp">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: rgb(255, 255, 255);">Najin</h5>
-                  <p class="card-text" style="color: rgb(235, 199, 0);">"La justice protège le peuple. Mais qui protège la justice ?"</p>
+              <div id="frieren" class="d-none">
+                <div class="row">
+                  <div class="col-sm-6 col-12 mb-2">
+                    <a href="roleplay/kaijhin/kaijhin.html">
+                      <div class="card caracter-card ">
+                        <img class="card-img-top" alt="Kaijhin" src="images/kaijhin/kaijhinProfile.webp">
+                        <div class="card-body">
+                          <h5 class="card-title" style="color: rgb(255, 255, 255);">Najin</h5>
+                          <p class="card-text" style="color: rgb(235, 199, 0);">"La justice protège le peuple. Mais qui protège la justice ?"</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +117,7 @@
 
     <div class="container">
       <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">2024 NesssGaster</strong> <span>Tous droits réservés.</span></p>
+        <p>© <strong class="px-1 sitename">2024 NesssGaster</strong></p>
       </div>
     </div>
 
