@@ -1,0 +1,7 @@
+{
+  "ltex.additionalRules.languageModel": "fr",
+  "ltex.additionalRules.motherTongue": "fr",
+  "ltex.completionEnabled": true,
+  "ltex.language": "fr",
+  "cSpell.language": "en,fr",
+}

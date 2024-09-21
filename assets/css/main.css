@@ -1673,3 +1673,10 @@ section,
 .bg-gray {
   background-color: #aaaaaa;
 }
+.text-garion {
+  color: var(--garion-color);
+}
+
+.border-garion {
+  border-color: var(--garion-color) !important;
+}

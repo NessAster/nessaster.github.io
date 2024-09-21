@@ -24,6 +24,7 @@
   <link href="../../assets/css/main.css" rel="stylesheet">
 
   <script src="../../assets/js/audio-set.js"></script>
+  <script src="../../assets/js/menu-card.js"></script>
 </head>
 
 <body class="index-page d-flex flex-column min-vh-100">
@@ -100,26 +101,76 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="targetCard" class="card caracter-card my-3" data-selected="border-garion text-garion" data-unselected="border-white text-white">
+        <div id="targetCard" class="card caracter-card my-3" data-selected="border-garion text-garion" data-unselected="border-white text-white">
           <div class="card-body">
             <div class="row gap-1">
               <div role="button" class="card-text col border-bottom border-white text-white border-1 cardMenu text-center" data-target="pouvoir"><span class="fw-bold">Pouvoir</span></div>
               <div role="button" class="card-text col border-bottom border-white text-white border-1 cardMenu text-center" data-target="arme"><span class="fw-bold">Arme</span></div>
             </div>
-            <div id="cardContaineur">
+            <div id="cardContaineur" class="pt-2">
               <div id="pouvoir" class="d-none">
-                <span class="text-danger fw-bold">Cette marque représente l'accumulation de sa rage durant ses années torturé, elle est représentée par une marque de griffes au fer rouge qu'il a à l'épaule droite.</span>
-                Cette marque viendra tout bêtement augmenter la force et la vitesse du corps de Najin réponse à chaque coup qu'il reçoit.
-                Plus il reçoit de coup et plus ces derniers sa puissant sera amplifier. Bien entendu, sa force accumuler n'est pas infini, il faut que son corps puisse supporter cette force,
-                l'accumulation viendra s'arrêtrer avant d'atteindre ce seuil. Mais le plus grand désavantage de cette technique est qu'il doit subir des dégât pour fonctionner.
+                <div class="w-100 text-center">
+                  <span class="text-garion fw-bold">Chéromancie.</span> Amateur
+                </div>
+                <div class="row mb-4 text-justify">
+                  <div class="col-md-4  d-flex flex-column" style="height: inherit;">
+                    <div class="text-garion fw-bold">Electrical programming</div>
+                    <div>
+                      Ce premier est sort est des plus simple. Un sort qui se base sur la manipulation d'un courant continue.
+                      Mais ce courant est très faible, il pourrait tout au plus engourdir un membre si on y est trop exposé.
+                      La vrai force de ce sort réside dans sa précision et les connaissance de Garion. Bien que simplette, elle est loin d'être idiote.
+                      Elle est même doué lorsqu'il s'agit de programmation et de mécanique et ce sort lui est très utile.
+                      Car il lui permet de reprogrammer directement des appareils par la simplement exposition à ce courant.
+                      Même si les explication in fine, sont plus complexe. Garion envoie un courant dans les circuit pour ouvrir ou fermer les transistors et donc le reprogrammer.
+                      C'est tout le principe de ce sort.
+                    </div>
+                    <img class="w-100 mt-auto" src="https://i.pinimg.com/originals/c4/b1/99/c4b19969def51164ea4ad9a290a217bf.gif" alt="">
+                  </div>
+                  <div class="col-md-4 d-flex flex-column" style="height: inherit;">
+                    <div class="text-garion fw-bold">Metallica</div>
+                    <div>
+                      Ce second sort ressemble beaucoup au premier, mais cette fois-ci avec moins de précision et plus de d'intensité, même si encore une fois,
+                      il ne peut causer que des engourdissement des membres si on s'y retrouve exposé trop longtemps. Dans ce cas, ce sort,
+                      permet surtout par un champ électrique de déplacer deux élément métallique l'un par rapport à l'autre.
+                      En somme rendre magnétique des éléments conducteur pendant de courts instants. Ce qui permet à Garion d'utiliser des objets mécanique sans même qu'ils ait de moteur,
+                      à condition que les mécanismes soit conducteur.
+                      Les contrainte sont qu'elle ne peut utiliser ce sort sur des éléments trop grand. S'il essaie de le faire sur une voiture,
+                      la voiture ne fera qu'attirer les éléments magnétique autour sans faire bouger la dite voiture.
+                      Mais elle pourra facilement mettre en marche les pistions du moteur de cette voiture sans batterie.
+                    </div>
+                    <img class="w-100 mt-auto" src="https://i.pinimg.com/originals/79/87/8e/79878e5f138d262bd823baa37a9654d2.gif" alt="">
+                  </div>
+                  <div class="col-md-4 d-flex flex-column" style="height: inherit;" >
+                    <div class="text-garion fw-bold">IEM</div>
+                    <div>
+                      Ce troisième et dernier sort est des plus simple, Garion génère un fort champ d'onde électromagnétique dans un rayon de 27 m tout autour d'elle.
+                      Un champ suffisamment puissant pour brouiller et dérégler les appareils électroniques dans ce rayon, les siens y compris.
+                      Lorsqu'elle utilise ce sort, IEM et Metallica devienne inutilisable pendant 3 tours d'action rp. Un sort à double tranchant en somme.
+                    </div>
+                    <img class="w-100 mt-auto" src="https://electromagneticpulse.weebly.com/uploads/5/1/1/8/51183913/5383178_orig.gif" alt="">
+                  </div>
+                </div>
+                <div class="">
+                  Les grands contrainte de son pouvoir est sa distance et son inefficacité qu'il soit défensif et offensif.
+                  Mais Garion compense ses contraintes par son esprit de mécanicienne.
+                </div>
               </div>
               <div id="arme" class="d-none">
-                <span class="text-danger fw-bold">Cette marque est la preuve de la souffrance que Najin a subit. Une soufrance marqué au fer rouge par une flamme sur son torse.</span>
-                Une souffrance frapper par Najin pendant longtemps, a tel point qu'il  sa douleur pouvoit persister pendant plusieurs jours. Cette marque permet à Najin de différer les dégâts subit. Il subit la moitié d'une attaque sur le coup et l'autre moitié sur la durée. Cela lui permet d'être moins effecté par une attaque, mais elle différe l'efficacité d'Accumulation et Tolérance. De plus avoir trops de blessures en différé n'est pas forcément la plus judicieuse des idées.
+                <div>
+                  <span class="text-garion fw-bold">Garion possède une arme, ou plutôt une valise à outil.</span>
+                  Oui oui, une sorte de valise sur un mètre vingts de long pour cinquante centimètres de large et vingts-cinq de profondeur.
+                  Cette valise est un simple condensé de technologies et surtout une arme et une boîte à outil.
+                  Garion reste avant tout, une mécanicienne.
+                  Cette valise possède en tout trois arme. La partie arrière de laquelle peut sortir une lame. La partie avant qui peut se modifier pour donner la forme d'un marteau à la valise,
+                  et de petites lames et scies attachées à des bras mécaniques cachés dans les compartiments et et truc.
+                </div>
+                <div class="w-100 mt-2 d-flex justify-content-center">
+                  <img class="rounded" src="../../images/garion/arme.webp" alt="arme">
+                </div>
               </div>
           </div>
         </div>
+      </div>
     </div>
   </main>
 
@@ -127,7 +178,7 @@
 
     <div class="container">
       <div class="copyright text-center">
-        <p>© <strong class="px-1 sitename">2024 NesssGaster</strong></p>
+        <p>© <strong class="px-1 sitename">2024 NessGaster</strong></p>
       </div>
     </div>
 
