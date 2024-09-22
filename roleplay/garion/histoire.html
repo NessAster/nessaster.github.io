@@ -24,6 +24,7 @@
   <link href="../../assets/css/main.css" rel="stylesheet">
 
   <script src="../../assets/js/audio-set.js"></script>
+  <script src="../../assets/js/menu-card.js"></script>
 </head>
 
 <body class="index-page d-flex flex-column min-vh-100">
@@ -54,28 +55,23 @@
       <div class="col-lg-8 col-10">
         <div class="card caracter-card">
           <div class="row g-0">
-            <div class="col-md-4 position-relative" style="height: inherit; overflow: hidden;">
-              <img id="profileImage" style="height: 100%;" src="../../images/garion/garionProfileCard.png" class="w-100 img-fluid rounded-start" alt="...">
-              <div class="position-absolute bottom-0 start-0 px-3 w-100">
-                <!-- <audio id="ost" controls loop style="width: inherit;">
-                  <source src="" type="audio/mpeg">
-                </audio> -->
+            <div class="col-md-4 p-1 d-flex flex-column" style="overflow: hidden;">
+              <div class="position-relative w-100 h-100">
+                <a href="./garion.html" class="position-absolute d-none d-md-block w-100 h-100">
+                  <div class="figure w-100 h-100">
+                    <img class="image-main img-fluid rounded-top w-100 h-100"  src="../../images/garion/linkCard/backProfileGarion.svg" srcset="../../images/garion/linkCard/backProfileGarion.svg" alt="">
+                    <img class="image-hover img-fluid rounded-top w-100 h-100"  src="../../images/garion/linkCard/backProfileGarionSelected.svg" srcset="../../images/garion/linkCard/backProfileGarionSelected.svg" alt="">
+                  </div>
+                </a>
+                <a href="./garion.html" class="d-md-none w-100 h-100">
+                  <div class="figure w-100 h-100">
+                    <img class="image-main img-fluid rounded-top w-100 h-100"  src="../../images/garion/linkCard/backProfileGarion.svg" srcset="../../images/garion/linkCard/backProfileGarion.svg" alt="">
+                    <img class="image-hover img-fluid rounded-top w-100 h-100"  src="../../images/garion/linkCard/backProfileGarionSelected.svg" srcset="../../images/garion/linkCard/backProfileGarionSelected.svg" alt="">
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-md-8 pb-0 d-flex flex-column">
-              <div class="card-body flex-grow-1">
-                <h4 class="card-title text-white mb-4"><span style="color: var(--garion-color)" class="fw-bold">Egerov Garion Yanova</span></h4>
-                <div class="row">
-                  <p class="card-text col-md-4 col-sm-6" style="color: var(--garion-color)"><span class="text-white fw-bold">Espèce :</span> Humaine</p>
-                  <p class="card-text col-md-4 col-sm-6" style="color: var(--garion-color)"><span class="text-white fw-bold">Sexe :</span> Féminin</p>
-                  <p class="card-text col-md-4 col-sm-6" style="color: var(--garion-color)" ><span class="text-white fw-bold">Age :</span> 25 ans</p>
-                </div>
-                <div class="row">
-                  <p class="card-text col-sm-4" style="color: var(--garion-color)"><span class="text-white fw-bold">Sexualité :</span> C'est une bonne question</p>
-                  <p class="card-text col-sm-4" style="color: var(--garion-color)"><span class="text-white fw-bold">Nationalité :</span> Russe</p>
-                  <p class="card-text col-sm-4" style="color: var(--garion-color)"><span class="text-white fw-bold">Statut :</span> Civil</p>
-                </div>
-              </div>
               <div class="w-100 p-1">
                 <a href="./pouvoirArme.html" class="w-100">
                   <div class="figure w-100">
@@ -95,19 +91,22 @@
                     <img class="image-hover img-fluid w-100"  src="../../images/garion/linkCard/garionLinkUnsplitSelected_part3.png" srcset="../../images/garion/linkCard/garionLinkUnsplitSelected_part3.png" alt="">
                   </div>
                 </a>
-                <a href="./histoire.html" class="w-100">
+                <a href="./histoire.html" class=" w-100">
                   <div class="figure w-100">
                     <img class="image-main img-fluid rounded-bottom w-100"  src="../../images/garion/linkCard/garionLinkUnsplit_part4.png" srcset="../../images/garion/linkCard/garionLinkUnsplit_part4.png" alt="">
                     <img class="image-hover img-fluid rounded-bottom w-100"  src="../../images/garion/linkCard/garionLinkUnsplitSelected_part4.png" srcset="../../images/garion/linkCard/garionLinkUnsplitSelected_part4.png" alt="">
                   </div>
                 </a>
               </div>
-              <!-- <img style="width: 100%;" src="../../images/garion/cardLink.svg" class="img-fluid mt-auto p-2" alt="..."> -->
             </div>
           </div>
         </div>
+        <div class="card caracter-card my-3">
+          <div class="card-body">
+
+          </div>
+        </div>
       </div>
-      <div class="col-lg-2 col-1"></div>
     </div>
   </main>
 
