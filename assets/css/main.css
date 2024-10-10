@@ -39,6 +39,9 @@
 :root {
   --alt-background-color: #000000;
   --garion-color: #63a79d;
+  --gwen-color: #fda0ab
+
+  ;
 }
 
 /* Smooth scroll */
@@ -532,4 +535,24 @@ h6 {
 
 .border-garion {
   border-color: var(--garion-color) !important;
+}
+
+.text-esther {
+  display: inline-block;
+  background: linear-gradient(to right, rgb(92, 46, 255), rgb(255, 255, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.esther-spike::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px; /* Ajustez selon la taille de votre image */
+  height: 50px; /* Ajustez selon la taille de votre image */
+  background-image: url("../img/esther/estherSpike.svg"); /* Remplacez par le chemin de votre image */
+  background-size: cover; /* Adapte l'image à la taille de l'élément */
+  transform: translate(70%, -70%); /* Centre l'image par rapport au coin supérieur droit */
 }
