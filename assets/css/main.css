@@ -39,9 +39,8 @@
 :root {
   --alt-background-color: #000000;
   --garion-color: #63a79d;
-  --gwen-color: #fda0ab
-
-  ;
+  --gwen-color: #fda0ab;
+  --grey-color: #797979;
 }
 
 /* Smooth scroll */
@@ -535,6 +534,14 @@ h6 {
 
 .border-garion {
   border-color: var(--garion-color) !important;
+}
+
+.text-grey {
+  color: var(--grey-color);
+}
+
+.border-grey {
+  border-color: var(--grey-color) !important;
 }
 
 .text-esther {
