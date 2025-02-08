@@ -39,8 +39,9 @@
 :root {
   --alt-background-color: #000000;
   --garion-color: #63a79d;
-  --gwen-color: #fda0ab;
+  --gwen-color: #a0bdfd;
   --grey-color: #797979;
+  --najin-color: rgb(235, 199, 0);
 }
 
 /* Smooth scroll */
@@ -495,6 +496,10 @@ h6 {
   overflow: hidden;
 }
 
+main {
+  padding-bottom: 1rem;
+}
+
 /*  Rollover image styles  */
 .figure {
   position: relative;
@@ -532,7 +537,7 @@ h6 {
   border-color: #4e4e4e !important;
 }
 
-#targetCard #cardContaineur {
+.targetCard #cardContaineur {
   overflow: hidden;
 }
   
@@ -545,6 +550,14 @@ h6 {
 
 .border-garion {
   border-color: var(--garion-color) !important;
+}
+
+.text-najin {
+  color: var(--najin-color);
+}
+
+.border-najin {
+  border-color: var(--najin-color) !important;
 }
 
 .text-grey {

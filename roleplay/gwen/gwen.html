@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NessWeb</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../assets/img/favicon.png" rel="icon">
+  <link href="../../assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Main CSS File -->
+  <link href="../../assets/css/main.css" rel="stylesheet">
+  <link href="../../assets/css/gwen.css" rel="stylesheet">
+
+  <script src="../../assets/js/audio-set.js"></script>
+  <script src="../../assets/js/gwen.js"></script>
+</head>
+
+<body class="index-page d-flex flex-column min-vh-100">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../../index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">NessGaster</h1>
+      </a>
+
+      <!-- <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#Accueil" class="active">Accueil<br></a></li>
+          <li><a href="#Accueil" class="active">Dice<br></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav> -->
+
+    </div>
+  </header>
+
+  <main class="main flex-grow-1 bg-dark">
+    <div class="row mt-4 w-100">
+      <div class="col-lg-3 col-1"></div>
+      <div class="col-lg-6 col-10">
+        <div class="d-flex justify-content-end">
+
+          <div class="book" id="book">
+            <div class="page cover" id="coverFront" style="z-index: 5;">
+              <div class="front gold-frame text-center d-flex flex-column align-items-center">
+                <img src="../../assets/img/gwen/gwenProfile.png" alt="gwen" class="w-100 rounded rounded-pill" style="border: 1px solid gold;">
+                <h1>Le récit d'une petite vie.</h1>
+                <p>Une infinité de connaissance pour une petit libraire.</p>
+              </div>
+              <div class="back">
+              </div>
+            </div>
+            <div class="page" id="page1" style="z-index: 4;">
+              <div class="front d-flex flex-column align-items-center">
+                <h2>Gwen Hokma</h2>
+                <div class="rounded-circle overflow-hidden ratio ratio-1x1 w-75" style="border: 1px solid gold;">
+                  <img src="../../assets/img/gwen/gwenFirstPage.png" alt="Gwen" class="w-100 h-100">
+                </div>
+                <span class="fst-italic">27 ans</span>
+                <span>Humaine.</span>
+                <p class="text-center mt-2">Née dans une certaine région du monde de Litchstadt, un royaume de mage dans lequel Gwen a grandi et s'est intéresser à répertorier chaque chose.</p>
+              </div>
+              <div class="back d-flex flex-column align-items-center">
+                <h2>Une tête remplie livre et pourtant toujours aussi vide.</h2>
+                <img src="../../assets/img/gwen/library.png" alt="library" class="w-100 rounded rounded-4" style="border: 1px solid gold;">
+                <p>Voici le verso de la première page.</p>
+              </div>
+            </div>
+            <div class="page" id="page2" style="z-index: 3;">
+              <div class="front">
+                <h2>Page 2 - Recto</h2>
+                <p>Contenu de la deuxième page (recto).</p>
+              </div>
+              <div class="back">
+                <h2>Page 2 - Verso</h2>
+                <p>Voici le verso de la deuxième page.</p>
+              </div>
+            </div>
+            <div class="page cover" id="coverBack" style="z-index: 1;">
+              <div class="front">
+                <h1>Intérieur de la dernière couverture</h1>
+                <p>Merci d'avoir lu !</p>
+              </div>
+              <div class="back gold-frame">
+                <h1>Quatrième de couverture</h1>
+                <p>Revenez bientôt !</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="book-controls">
+          <button id="prevPage">Page précédente</button>
+          <button id="nextPage">Page suivante</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-1"></div>
+  </div>
+</main>
+
+<footer id="footer" class="footer mt-auto">
+
+  <div class="container">
+    <div class="copyright text-center">
+      <p>©<strong class="px-1 sitename">2024 NessGaster</strong></p>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+
+</html>

@@ -22,12 +22,13 @@
 
   <!-- Main CSS File -->
   <link href="../../assets/css/main.css" rel="stylesheet">
+  <link href="../../assets/css/najin.css" rel="stylesheet">
 
   <script src="../../assets/js/najin.js"></script>
   <script src="../../assets/js/audio-set.js"></script>
 </head>
 
-<body class="index-page d-flex flex-column min-vh-100">
+<body class="index-page d-flex flex-column vh-100 overflow-hidden">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -49,7 +50,13 @@
     </div>
   </header>
 
-  <main class="main flex-grow-1 bg-dark">
+  <div class="randomGif gif-container" style="display: none;"><img class="w-100" src="../../assets/img/najin/kd/eyesOne.gif" alt="."></div>
+  <div class="randomGif gif-container" style="display: none;"><img class="w-100" src="../../assets/img/najin/kd/eyesOne.gif" alt="."></div>
+  <div class="randomGif gif-container" style="display: none;"><img class="w-100" src="../../assets/img/najin/kd/eyesOne.gif" alt="."></div>
+  <div class="randomGif gif-container" style="display: none;"><img class="w-100" src="../../assets/img/najin/kd/eyesOne.gif" alt="."></div>
+  <div class="randomGif gif-container" style="display: none;"><img class="w-100" src="../../assets/img/najin/kd/eyesOne.gif" alt="."></div>
+  <div class="randomGif gif-container" style="display: none;"><img class="w-100" src="../../assets/img/najin/kd/eyesOne.gif" alt="."></div>
+  <main class="main flex-grow-1 bg-dark overflow-auto">
     <div class="row mt-4 w-100">
       <div class="col-lg-2 col-1"></div>
       <div class="col-lg-8 col-10">
@@ -62,36 +69,72 @@
                   <img class="image-hover" src="../../assets/img/najin/memepart_2.png" srcset="../../assets/img/najin/memepart_2.png" alt="...">
                 </div>
               </div>
-              <img id="profileImage" style="height: 100%;" src="../../assets/img/najin/najinCard.webp" class="w-100 img-fluid rounded-start" alt="...">
+              <img id="profileImage" style="height: 100%;" src="../../assets/img/najin/kd/profile.png" class="w-100 img-fluid rounded-start" alt="...">
               <div class="position-absolute bottom-0 start-0 px-3 w-100">
                 <audio id="ost" controls loop style="width: inherit;">
-                  <source src="../../assets/musique/najin/Limbus Company - Canto III Battle Theme D1.mp3" type="audio/mpeg">
+                  <source src="../../assets/musique/esther-hokma/Esther - Prepare to Hunt.mp3" type="audio/mpeg">
                 </audio>
               </div>
             </div>
             <div class="col-md-8 pb-0 d-flex flex-column">
-              <div class="card-body flex-grow-1">
-                <h4 class="card-title text-white mb-4"><span class="text-danger fw-bold">Najin</span> Lionheart</h4>
-                <div class="row">
-                  <p class="card-text col-md-4 col-sm-6 text-danger"><span class="text-white fw-bold">Race :</span> Humain</p>
-                  <p class="card-text col-md-4 col-sm-6 text-danger"><span class="text-white fw-bold">Sexe :</span> Masculin</p>
-                  <p class="card-text col-md-4 col-sm-6 text-danger"><span class="text-white fw-bold">Age :</span> 22 ans</p>
+              <div class="card-body flex-grow-1 position-relative overflow-hidden">
+                <div>
+                  <h4 class="card-title text-white mb-4"><span class="text-najin fw-bold">Najin</span> Newt</h4>
+                  <div class="row">
+                    <span class="card-text col-md-4 col-sm-6 text-najin"><span class="text-white fw-bold">Race :</span> Humain</span>
+                    <span class="card-text col-md-4 col-sm-6 text-najin"><span class="text-white fw-bold">Sexe :</span> Masculin</span>
+                    <span class="card-text col-md-4 col-sm-6 text-najin"><span class="text-white fw-bold">Age :</span> 23 ans</span>
+                    <span class="card-text col-md-4 col-sm-6 text-najin"><span class="text-white fw-bold">Faction :</span> Pirates</span>
+                    <span class="card-text col-md-4 col-sm-6 text-najin"><span class="text-white fw-bold">Rang :</span> Matelot</span>
+                    <span class="card-text col-md-4 col-sm-6 text-najin"><span class="text-white fw-bold">Tier :</span> III</span>
+                  </div>
+                  <hr>
+                  <p><span class="text-white fw-bold">Najin</span>, enfant de la famille Newt. Un jeune homme de 23 ans, devenu chef de <span style="color: black;">l'espionnage</span> dans le groupe de son grand grand frère.</p>
+                  <div class="w-100 row" style="height: fit-content;">
+                    <div class="col-6 h-100">
+                      <a class="h-100 position-relative p-0 cardLink" href="./art.html" style="outline: 2px solid whitesmoke;">
+                        <img class="w-100 h-100" src="../../assets/img/najin/kd/art.png" alt="Art">
+                        <div class="w-100 position-absolute top-50 translate-middle-y text-center bg-light" style="color: black;">
+                          Art
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6 h-100">
+                      <a id="psychoBtn" class="h-100 position-relative p-0 cardLink" href="#" style="outline: 2px solid #212529;">
+                        <img class="w-100 h-100" src="../../assets/img/najin/kd/psycho.png" alt="Psycho">
+                        <div class="w-100 position-absolute top-50 translate-middle-y text-center bg-dark" style="color: white;">
+                          Psychologie
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="row">
-                  <p class="card-text col-sm-6 text-danger"><span class="text-white fw-bold">Faction :</span> Pirates</p>
-                  <p class="card-text col-sm-6 text-danger"><span class="text-white fw-bold">Rang :</span> Matelot</p>
+                <div id="psychoDiv" class="position-absolute w-100 h-100 p-4 overflow-auto d-none pt-0">
+                  <div class="w-100 pb-2 sticky-top pt-3" style="background-color: black;"><a href="#" id="psychoClose">◄ Profile</a></div>
+                  <p>
+                    Kaïjhin est un homme d'une loyauté sans faille, peut-être même trop loyal à vrai dire. Tout comme sa mère, mais il n'a pas hérité que sa loyauté, mais aussi son intellect, qui se change parfois en fourberie.
+                  </p>
+                  <p>
+                    Autre que ces deux traits hérités de sa mère il a aussi récupéré la morale de son père, la compassion pour protéger les personnes dans le besoin.
+                  </p>
+                  <p>
+                    Un homme pour le moins jovial, compréhensif, calme, il préfère très clairement la tranquillité du silence et si l'occasion se présente, remplir ce silence d'une mélodie de piano. Mais ce n'est pas parce-qu'il aime la solitude qu'il déteste les autres.
+                  </p>
+                  <p>
+                    Si c'était le cas sa loyauté et sa gentillesse n'auraient aucun sens. Il est très facilement enclin à aider et suivre les personnes qui lui sont proches.
+                  </p>
+                  <p>
+                    Enfin, c'était comme cela qu'il était par le passé. À vrai dire, son caractère a bien changé depuis cette époque. Bien que son intellect et que sa loyauté ne sont pas à douter, le reste est une tout autre histoire.
+                  </p>
+                  <p>
+                    Son caractère a changé bien radicalement et il est devenu totalement imprévisible, surtout un véritable mur opaque. Il est impossible de savoir ce qu'il pense. Comme si sa vie n'était alors plus qu'un simple rôle, devenu l'ombre de lui-même, ou l'ombre d'un autre.
+                  </p>
+                  <p>
+                    Que lui est-il arrivé ? Rien de bien compliqué, son poste de chef de l'espionnage aura eu raison de lui. La responsabilité de ce poste lui est monté à la tête, et sans même s'en rendre compte, a force de mission, il a fini par ne plus faire le distinguo entre l'espionnage ou non, n'étant plus qu'un robot loyal. Quand bien à de rare moments son caractère d'antan refait légèrement surface, notamment lorsqu'il se trouve avec sa famille. Mais la plupart du temps il ne joue qu'un simple rôle, il n'est plus qu'un rôle de sa propre vie.
+                  </p>
                 </div>
               </div>
-              <img style="width: 100%;" src="../../assets/img/najin/footerProfile.png" class="img-fluid mt-auto" alt="...">
             </div>
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <div class="card caracter-card mt-5 p-1 d-flex justify-content-center">
-            <a href="./style/artMartyrers.html">
-              <img class="w-100" src="../../assets/img/najin/artTitre.png" style="width: inherit;" alt="">
-            </a>
           </div>
         </div>
       </div>
@@ -103,9 +146,11 @@
 
     <div class="container">
       <div class="copyright text-center">
-        <p>© <strong class="px-1 sitename">2024 NessGaster</strong></p>
+        <p>©<strong class="px-1 sitename">2024 NessGaster</strong></p>
+        <div>
+          Image par <a href="https://safebooru.org/index.php?page=post&s=list&tags=nininininil">nininininil</a>, <a href="https://x.com/fuku0275">fuku0275</a>
+        </div>
       </div>
-    </div>
 
   </footer>
 

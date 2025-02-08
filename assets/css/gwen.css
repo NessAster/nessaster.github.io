@@ -1,0 +1,82 @@
+:root {
+  --heading-font: Georgia, serif !important;
+}
+
+.book {
+  position: relative;
+  width: 50%;
+  height: 600px;
+  perspective: 1500px;
+  font-family: Georgia, serif !important;
+  color: black;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 1s ease;
+}
+.page.cover {
+  width: 102%; /* Plus large pour la couverture */
+  height: 610px; /* Plus haut pour la couverture */
+}
+.page.cover .front, .page.cover .back {
+  width: 100%;
+  height: 100%;
+  margin-top: -5px;
+}
+.page .front, .page .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #fae3c5;
+}
+.page .back {
+  transform: rotateY(180deg);
+}
+.page.cover .front {
+  background: #0e3766;
+  color: white;
+  font-size: 24px;
+}
+.page.cover .back {
+  background: #0e3766;
+  color: white;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+.page.cover .gold-frame {
+  background-image: url('../img/gwen/cadreLivre.png');
+  background-size: 100% 100%;
+  padding: 25% 15% ;
+}
+
+.book-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+.book-controls button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.book-controls button:hover {
+  background: #0056b3;
+}
+
+
+
+
