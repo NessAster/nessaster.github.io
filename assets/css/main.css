@@ -42,6 +42,7 @@
   --gwen-color: #a0bdfd;
   --grey-color: #797979;
   --najin-color: rgb(235, 199, 0);
+  --rika-color: rgb(140, 140, 140);
 }
 
 /* Smooth scroll */
@@ -586,4 +587,12 @@ main {
   background-image: url("../img/esther/estherSpike.svg"); /* Remplacez par le chemin de votre image */
   background-size: cover; /* Adapte l'image à la taille de l'élément */
   transform: translate(70%, -70%); /* Centre l'image par rapport au coin supérieur droit */
+}
+
+.polaroidFrame {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  padding: 0 !important;
 }
