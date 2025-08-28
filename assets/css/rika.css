@@ -113,26 +113,6 @@
   background: #0056b3;
 }
 
-.lecteur {
-  background: #676767;
-  width: 50%;
-  border-bottom-left-radius: 50% 30px;
-  border-bottom-right-radius: 50% 30px;
-}
-
-.cd.animate {
-  -webkit-animation: infinite-spinning 2s infinite linear;
-}
-
-@-webkit-keyframes infinite-spinning {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
 @media (max-width: 768px) {
   .book {
     width: 100vw;
@@ -148,11 +128,4 @@
     transition: transform 1s ease;
     transform-style: preserve-3d;
   }
-}
-
-audio::-webkit-media-controls-play-button {
-    display: none !important;
-}
-audio::-webkit-media-controls-start-playback-button {
-    display: none !important;
 }

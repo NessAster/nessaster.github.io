@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NessWeb</title>
+  <meta property="og:title" content="NessWeb - Noémie Meyer" />
+  <meta property="og:image" content="../../../assets/img/noemie/linkDisplay.png" />
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../../assets/img/favicon.png" rel="icon">
+  <link href="../../../assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+  <!-- Main CSS File -->
+  <link href="../../../assets/css/main.css" rel="stylesheet">
+  <link href="../../../assets/css/najin.css" rel="stylesheet">
+  <link href="../../../assets/css/nucifera.css" rel="stylesheet">
+  <link href="../../../assets/css/card-detail.css" rel="stylesheet">
+  <link href="../../../assets/css/lecteur.css" rel="stylesheet">
+
+  <script src="../../../assets/js/cardDetail.js"></script>
+  <script src="../../../assets/js/audio-set.js"></script>
+</head>
+
+<body class="index-page d-flex flex-column vh-100 overflow-hidden">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../../../index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">NessGaster</h1>
+      </a>
+
+      <!-- <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#Accueil" class="active">Accueil<br></a></li>
+          <li><a href="#Accueil" class="active">Dice<br></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav> -->
+
+    </div>
+  </header>
+
+  <main class="main flex-grow-1 bg-dark overflow-auto">
+    <div class="row mt-4 w-100">
+      <div class="col-lg-2 col-1"></div>
+      <div class="col-lg-8 col-10">
+        <div class="card caracter-card">
+          <div class="row g-0">
+            <div class="col-md-8 pb-0 d-flex flex-column">
+              <div class="card-body flex-grow-1 position-relative overflow-hidden">
+                <div>
+                  <div class="w-100"><a href="../menu.html">◄ Profile</a></div>
+                  <div class="row">
+                    <span class="card-text col-md-4 col-sm-6"><span class="text-white fw-bold">Grade Anomalie :</span> ***</span>
+                    <span class="card-text col-md-4 col-sm-6"><span class="text-white fw-bold">Rang Anomalie :</span> ***</span>
+                  </div>
+                  <hr>
+                  <div class="w-100 row align-items-stretch">
+                    <div class="col-6 d-flex">
+                      <a class="detailBtn position-relative p-0 cardLink flex-fill" data-target="style" href="#" style="outline: 2px solid #212529;">
+                        <img class="img-left w-100 h-100" src="../../../assets/img/noemie/styleCombat.png" alt="Art">
+                        <div class="w-100 position-absolute top-50 translate-middle-y text-center bg-dark" style="color: white;">
+                          Capacités en combat
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6 d-flex">
+                      <a class="detailBtn position-relative p-0 cardLink flex-fill" data-target="poder" href="#" style="outline: 2px solid whitesmoke;">
+                        <img class="img-right w-100 h-100" src="../../../assets/img/noemie/ichorDesc.png" alt="Psycho">
+                        <div class="w-100 position-absolute top-50 translate-middle-y text-center bg-light" style="color: black;">
+                          Description de l'Ichor
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="poder" class="detailBox position-absolute w-100 h-100 p-4 overflow-auto d-none pt-0 text-justify">
+                  <div class="detailClose w-100 pb-2 sticky-top pt-3" data-target="poder" style="background-color: black;"><a href="#">◄ Retour</a></div>
+                  <p class="text-justify">
+                    Deep Sea, c'est le nom que donne Noémie a son Ichor, un pouvoir aquakinésie. Noémie est capable de condenser l'eau présente dans l'air ou de manipuler l'eau qui se trouve dans un rayon de 5 mètres autour d'elle,
+                    tant qu'elle n'est pas présente dans un organisme vivant. Elle peut également ressortir de l'eau de végétaux avec un contact direct.
+                  </p>
+                  <p class="text-justify">
+                    Noémie est capable de manipuler cette eau dans un rayon 5 mètres sans restriction et dans un rayon de 10 mètres tant que l'eau est en contact avec une surface.
+                  </p>
+                  <p class="text-justify">
+                    Elle est capable de données la forme quelle qu'elle veut dans la mesure de son rayon d'action. De plus Noémie est capable de dilater l'eau pour en faire de la brume,
+                    ou de la compacter pour la rendre solide.
+                  </p>
+                  <p class="text-justify">
+                    Mais elle peut aussi comprimer l'eau en un point, de la taille d'une bille de rayon de quelque centimètres, qui permet au contact,
+                    de la faire exploser pour propulser l'objet ayant été en contact avec cette bille. Bien évidemment cela demande une certaine quantité d'eau selon la pression voulue.
+                  </p>
+                  <p class="text-justify">
+                    Mais elle ne nomme pas cet Ichor Deep Sea simplement pour sa manipulation de l'eau, puisque lorsqu'elle se trouve sur le sol, elle le transforme en une sorte d'océan,
+                    il est impossible de tomber dans cet océan, les seuls choses que cet océan engendre est la formation de nuage au dessus de ce dernier, qui pour l'heure, Noémie ne peut manipuler,
+                    des vagues qu'elle peut former, d'une dizaine de centimètres de hauteur et pour finir des poissons.
+                  </p>
+                  <p class="text-justify">
+                    De simples petits poissons d'une dizaine de centimètres de long qui n'ont pas yeux, mais une paires de bouche aux dents tranchantes comme des rasoirs au même titre que leurs nageoires.
+                    Noémie est capable de manipuler 10 poissons maximum et si l'un d'entre eux se retrouve tué, il faudra deux tours avant qu'un nouveau vienne le remplacer. Pour ce qui est de leurs déplacements,
+                    ils ne peuvent que nager et se propulser hors de l'eau, mais ils peuvent nager à l'intérieur de n'importe quelle matière tant qu'ils ont de l'eau depuis laquelle entrer ou sortir. 
+                  </p>
+                </div>
+                <div id="style" class="detailBox position-absolute w-100 h-100 p-4 overflow-auto d-none pt-0 text-justify">
+                  <div class="detailClose w-100 pb-2 sticky-top pt-3" data-target="style" style="background-color: black;"><a href="#">◄ Retour</a></div>
+                  <p>
+                    Pour ce qui est de ses capacités en combat, elle est relativement bonne combattante, elle a déjà pratiqué quelques sports de combat, notamment du self défense,
+                    ainsi que de la box et elle sait plutôt bien manier les armes lourdes, après avoir beaucoup utilisé des masse de démolition.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 position-relative" style="height: inherit; overflow: hidden;">
+              <div class="h-100 d-flex align-items-center">
+                <div class="lecteur m-auto">
+                  <div class="d-flex flex-column w-100 h-100">
+                    <div class="w-100 py-4 px-3">
+                      <div class="bg-white w-100 h-100 d-flex flex-column justify-content-between">
+                        <div class="w-100 my-2"></div>
+                        <div class="w-100 d-flex justify-content-center">
+                          <img id="discMp3" src="../../../assets/img/disc.png" data-src="../../../assets/img/asgore-undertale.gif" alt="cd" class="cd rounded rounded-circle" style="width: 60%; height: auto;">
+                        </div>
+                        <audio id="ost" controls loop style="width: inherit;">
+                          <source src="../../../assets/musique/noemie/Lace (Silksong OST Sample).mp3" data-src="../../../assets/musique/Asgore Runs Over Dess With Lyrics - Full Version feat. @Bub8les.mp3" type="audio/mpeg">
+                        </audio>
+                      </div>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center mb-4" style="height: fit-content;">
+                      <div class="rounded rounded-circle d-flex align-items-center flex-column text-center" style="background-color: rgb(50, 50, 50); height: fit-content; width: fit-content;">
+                        <div class="px-3 py-2 my-auto">M</div>
+                        <div class="d-flex">
+                          <div class="px-3 py-2 my-auto toggleNext" style="cursor: pointer;">⏮</div>
+                          <div id="player" class="my-auto px-3 py-2 border border-1 border-dark rounded rounded-circle" style="cursor: pointer;">⏯</div>
+                          <div class="px-3 py-2 my-auto toggleNext" style="cursor: pointer;">⏭</div>
+                        </div> 
+                        <div class="px-3 py-2 my-auto">VOL</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-1"></div>
+    </div>
+  </main>
+
+  <footer id="footer" class="footer mt-auto">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>©<strong class="px-1 sitename">2024 NessGaster</strong></p>
+        <div>
+          Image par <a href="https://x.com/Shrimp_1230">Shrimp_1230</a>, <a href="https://x.com/BeanniBun">BeanniBun</a>
+        </div>
+        <div>
+          Musique par <a href="https://youtu.be/zRs58D34OLY?list=PLmOldskd2VbL7_t-NE9p6rEboq_v0AHko">Christopher Larkin</a>
+        </div>
+      </div>
+
+  </footer>
+
+</body>
+
+</html>

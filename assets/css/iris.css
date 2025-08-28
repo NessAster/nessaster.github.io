@@ -1,0 +1,159 @@
+:root {
+  --heading-font: Courier New, serif !important;
+}
+
+.book {
+  position: relative;
+  width: 50%;
+  height: auto;
+  perspective: 1500px;
+  font-family: Courier New, serif !important;
+  color: black;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 1s ease;
+}
+.page.cover {
+  width: 102%; /* Plus large pour la couverture */
+  height: 105%; /* Plus haut pour la couverture */
+  
+}
+.page.cover .front, .page.cover .back {
+  width: 100%;
+  height: 100%;
+  margin-top: -15px;
+  border: 0.5rem solid #ece29b;
+  border-left: 0;
+}
+
+.page .front, .page .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+}
+
+.page .front .content, .page .back .content{
+  padding: 20px;
+  width: 100%;
+}
+
+.page .back {
+  transform: rotateY(180deg);
+}
+
+.page.cover .front {
+  background: #fae3c5;
+  color: rgb(39, 39, 39);
+  font-size: 24px;
+  border-radius: 0% 0% 15px 0%;
+  border-left: 0;
+}
+
+.page.cover .back {
+  background: #fae3c5;
+  color: rgb(39, 39, 39);;
+  font-size: 24px;
+  transform: rotateY(180deg);
+  border-radius: 0% 0% 0% 15px;
+  border-right: 0;
+}
+
+.page.cover .front .addon {
+  position: absolute;
+  width: 10%;
+  height: 50%;
+  left: 100%;
+  top: -0.5rem;
+  background: #fae3c5;
+  font-size: 24px;
+  border-radius: 0% 15px 15px 0%;
+  border: 0.5rem solid #ece29b;
+  border-left: 0;
+}
+
+.page.cover .back .addon {
+  position: absolute;
+  width: 10%;
+  height: 50%;
+  left: 0;
+  top: -0.5rem;
+  background: #fae3c5;
+  font-size: 24px;
+  transform: rotateY(180deg) translateX(100%);
+  border-radius: 0% 15px 15px 0%;
+  border: 0.5rem solid #ece29b;
+  border-left: 0;
+}
+
+.book-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+.book-controls button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.book-controls button:hover {
+  background: #0056b3;
+}
+
+
+.lecteur {
+  background: #676767;
+  width: 50%;
+  border-bottom-left-radius: 50% 30px;
+  border-bottom-right-radius: 50% 30px;
+}
+
+.cd.animate {
+  -webkit-animation: infinite-spinning 2s infinite linear;
+}
+
+@-webkit-keyframes infinite-spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .book {
+    width: 100vw;
+    transform: translate(100%);
+    height: auto;
+    perspective: 1500px;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+  }
+}
+
+audio::-webkit-media-controls-play-button {
+    display: none !important;
+}
+audio::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
