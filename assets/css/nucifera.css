@@ -41,6 +41,22 @@ svg.hovered {
     animation: wave 10s linear infinite;
     z-index: 3;
 }
+@media (max-width: 768px) {
+    .wave {
+        height: 60px; /* plus fine */
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='60'><path fill='%232196f3' d='M0 20 Q 150 40 300 20 T 600 20 T 900 20 T 1200 20 V60 H0 Z'/></svg>");
+        background-size: 600px 60px;
+        width: 400%;
+        max-width: 400%;
+    }
+
+    /* .wave2 {
+        opacity: 0.6;
+        animation: wave 15s linear infinite;
+        bottom: calc(8% + 400px);
+        z-index: 1;
+    } */
+}
 
 .wave2 {
     opacity: 0.6;
@@ -80,31 +96,6 @@ svg.hovered {
     0%   { transform: rotate(15deg) translateY(50%); }
     100% { transform: rotate(-15deg) translateY(-50%); }
 }
-
-/* audio {
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-
-audio::-webkit-media-controls-panel {
-    background-color: #2196f3;
-    border-radius: 0;
-}
-
-audio::-webkit-media-controls-play-button {
-    background-color: white;
-    border-radius: 50%;
-}
-
-audio::-webkit-media-controls-timeline {
-    background-color: #2196f3;
-}
-
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display {
-    color: white;
-} */
 
 .custom-player {
     font-family: Courier New, serif !important;
