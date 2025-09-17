@@ -1,0 +1,103 @@
+/* --- Papyrus card --- */
+.papyrus{
+  --paper-light:#f6ecce;   /* ton clair */
+  --paper-mid:#eadfb1;     /* ton moyen */
+  --paper-deep:#e0cf98;    /* ton plus chaud */
+  --edge:#c2a86b;          /* bord / ombre */
+  --stain:#c89d53;         /* taches légères */
+
+  position: relative;
+  padding: clamp(20px, 4vw, 40px);
+  border-radius: 14px;
+  color:#3d2e12;
+  font-family: "IM Fell English", serif;
+  line-height: 1.6;
+
+  /* 1) couche papier (dégradés chauds) + 2) taches radiales + 3) grain (SVG bruit) */
+  background-image:
+    radial-gradient(120px 80px at 18% 22%, rgba(200,157,83,.18) 0, rgba(200,157,83,0) 60%),
+    radial-gradient(160px 100px at 78% 35%, rgba(200,157,83,.14) 0, rgba(200,157,83,0) 65%),
+    radial-gradient(200px 130px at 30% 78%, rgba(200,157,83,.12) 0, rgba(200,157,83,0) 65%),
+    linear-gradient(180deg, var(--paper-light), var(--paper-mid) 55%, var(--paper-deep));
+  background-blend-mode: multiply, multiply, multiply, normal;
+
+  /* finitions du “papier” */
+  box-shadow:
+    inset 0 0 0 1px rgba(0,0,0,.06),
+    inset 0 8px 30px rgba(0,0,0,.12),
+    0 14px 40px rgba(0,0,0,.18);
+
+  /* petite texture “fibres” via un SVG bruit encodé */
+  position: relative;
+  overflow: hidden;
+}
+
+/* couche de grain (superposée) */
+.papyrus::after{
+  content:"";
+  position:absolute; inset:0;
+  pointer-events:none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.08'/></svg>");
+  mix-blend-mode: multiply; opacity:.7;
+}
+
+/* bords irréguliers “défilochés” via mask */
+.papyrus{
+  -webkit-mask-image:
+    radial-gradient(20px 20px at 10px 10px, #0000 10px, #000 11px),
+    radial-gradient(22px 22px at calc(100% - 12px) 12px, #0000 11px, #000 12px),
+    radial-gradient(26px 26px at 12px calc(100% - 12px), #0000 12px, #000 13px),
+    radial-gradient(22px 22px at calc(100% - 14px) calc(100% - 14px), #0000 11px, #000 12px),
+    linear-gradient(#000, #000);
+  -webkit-mask-composite: destination-over, destination-over, destination-over, destination-over, source-over;
+          mask-image:
+    radial-gradient(20px 20px at 10px 10px, #0000 10px, #000 11px),
+    radial-gradient(22px 22px at calc(100% - 12px) 12px, #0000 11px, #000 12px),
+    radial-gradient(26px 26px at 12px calc(100% - 12px), #0000 12px, #000 13px),
+    radial-gradient(22px 22px at calc(100% - 14px) calc(100% - 14px), #0000 11px, #000 12px),
+    linear-gradient(#000, #000);
+  mask-composite: add, add, add, add, add;
+}
+
+/* ombrage “table” + liseré */
+.papyrus::before{
+  content:"";
+  position:absolute; inset:-2px;
+  border-radius: 16px;
+  box-shadow:
+    inset 0 0 0 2px rgba(194,168,107,.45),
+    inset 0 0 60px rgba(255,255,255,.35);
+  pointer-events:none;
+}
+
+/* un léger effet “ligne de fibres” verticales */
+.papyrus{
+  background-image:
+    repeating-linear-gradient(90deg, rgba(255,255,255,.12) 0 1px, transparent 1px 6px),
+    radial-gradient(120px 80px at 18% 22%, rgba(200,157,83,.18) 0, rgba(200,157,83,0) 60%),
+    radial-gradient(160px 100px at 78% 35%, rgba(200,157,83,.14) 0, rgba(200,157,83,0) 65%),
+    radial-gradient(200px 130px at 30% 78%, rgba(200,157,83,.12) 0, rgba(200,157,83,0) 65%),
+    linear-gradient(180deg, var(--paper-light), var(--paper-mid) 55%, var(--paper-deep));
+  background-size: auto, auto, auto, auto, auto;
+  background-blend-mode: overlay, multiply, multiply, multiply, normal;
+}
+
+/* Typo & détails */
+.papyrus h2{
+  margin: 0 0 .4em;
+  font-size: clamp(24px, 4vw, 36px);
+  letter-spacing:.5px;
+  text-shadow: 0 1px 0 rgba(255,255,255,.25);
+}
+.papyrus p{ margin:0; font-size: clamp(16px, 2.2vw, 18px); }
+
+/* Version “plus plate” sur téléphone (moins d’ombre/texture, plus lisible) */
+@media (max-width: 768px){
+  .papyrus{
+    padding: 18px;
+    box-shadow:
+      inset 0 0 0 1px rgba(0,0,0,.05),
+      0 8px 20px rgba(0,0,0,.12);
+  }
+  .papyrus::after{ opacity:.5; } /* moins de grain */
+}
