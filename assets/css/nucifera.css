@@ -4,7 +4,17 @@
     transform-origin: center center;
 }
 
-.clickable-element:hover {
+.fond, .symbole {
+    transition: opacity 0.8s ease;
+}
+
+.clickable-animation {
+    pointer-events: auto;
+    transition: transform 2s ease; 
+    transform-origin: center center;
+}
+
+.clickable-element.grow:hover {
     transform: scale(1.4);
 }
 
