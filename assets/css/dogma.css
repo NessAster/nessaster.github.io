@@ -1,0 +1,10 @@
+.clickable-animation {
+    pointer-events: auto;
+    transition: transform 1s ease; 
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+.clickable-animation.grow:hover {
+    transform: scale(1.1);
+}

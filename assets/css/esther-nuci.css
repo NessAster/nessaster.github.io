@@ -1,0 +1,19 @@
+.rick {
+  border-radius: 5px;
+  background-image: url(https://c.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif);
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+
+.falling {
+    top: 0;
+    transform: translateY(0);
+    white-space: nowrap;
+    animation: fall 1.5s ease-in forwards;
+    --fall-distance: 0px;
+}
+
+@keyframes fall {
+  from { transform: translateY(0)!important; }
+  to { transform: translateY(var(--fall-distance))!important; }
+}
