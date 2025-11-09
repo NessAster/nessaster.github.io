@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NessWeb</title>
+  <meta property="og:title" content="NessWeb - Esther" />
+  <meta property="og:image" content="https://nessaster.github.io/assets/img/lampadaire/meta.png" />
+  <meta property="og:type" content="website" />
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../../assets/img/favicon.png" rel="icon">
+  <link href="../../../assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+  <!-- Main CSS File -->
+  <link href="../../../assets/css/main.css" rel="stylesheet">
+  <link href="../../../assets/css/najin.css" rel="stylesheet">
+  <link href="../../../assets/css/nucifera.css" rel="stylesheet">
+  <link href="../../../assets/css/card-detail.css" rel="stylesheet">
+  <link href="../../../assets/css/lecteur.css" rel="stylesheet">
+
+  <script src="../../../assets/js/cardDetail.js"></script>
+  <script src="../../../assets/js/audio-set.js"></script>
+</head>
+
+<body class="index-page d-flex flex-column vh-100 overflow-hidden">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../../../index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">NessGaster</h1>
+      </a>
+
+      <!-- <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#Accueil" class="active">Accueil<br></a></li>
+          <li><a href="#Accueil" class="active">Dice<br></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav> -->
+
+    </div>
+  </header>
+
+  <main class="main flex-grow-1 bg-dark overflow-auto">
+    <div class="row mt-4 w-100">
+      <div class="col-lg-2 col-1"></div>
+      <div class="col-lg-8 col-10">
+        <div class="card caracter-card">
+          <div class="row g-0">
+            <div class="col-md-8 pb-0 d-flex flex-column">
+              <div class="card-body flex-grow-1 position-relative overflow-hidden">
+                <div>
+                  <div class="w-100"><a href="./menu.html">◄ Profile</a></div>
+                  <div class="row">
+                    <span class="card-text col-md-4 col-sm-6"><span class="text-white fw-bold">Grade :</span> ???</span>
+                    <span class="card-text col-md-4 col-sm-6"><span class="text-white fw-bold">Rang :</span> ???</span>
+                    <span class="card-text col-md-4 col-sm-6"><span class="text-white fw-bold">Rang Ichor :</span> ???</span>
+                  </div>
+                  <hr>
+                  <div class="w-100 row align-items-stretch">
+                    <div class="col-6 d-flex">
+                      <a class="detailBtn position-relative p-0 cardLink flex-fill" data-target="style" href="#" style="outline: 2px solid #212529;">
+                        <img class="img-left w-100 h-100" src="../../../assets/img/lampadaire/combat.png" alt="Art">
+                        <div class="w-100 position-absolute top-50 translate-middle-y text-center bg-dark" style="color: white;">
+                          Capacités en combat
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-6 d-flex">
+                      <a class="detailBtn position-relative p-0 cardLink flex-fill" data-target="poder" href="#" style="outline: 2px solid whitesmoke;">
+                        <img class="img-right w-100 h-100" src="../../../assets/img/lampadaire/ichor.png" alt="Psycho">
+                        <div class="w-100 position-absolute top-50 translate-middle-y text-center bg-light" style="color: black;">
+                          Description de l'Ichor
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="poder" class="detailBox position-absolute w-100 h-100 p-4 overflow-auto d-none pt-0 text-justify">
+                  <div class="detailClose w-100 pb-2 sticky-top pt-3" data-target="poder" style="background-color: black;"><a href="#">◄ Retour</a></div>
+                  <p class="text-justify">
+                    L'Ichor d'Esther est lié à l'obscurité. Dans un rayon de 40 mètres, Esther est capable de plonger cet espace dans une obscurité totale.
+                    Obscurité dans laquelle, seul Esther peut voir et dont seule la lumière de la tête d'Esther est obligatoirement allumée pendant l'activation de son Ichor, éclairant une zone de 5 mètres autour d'Esther.
+                    Dans cette zone de 40 mètres, Esther est aussi capable de former jusqu'à 3 lampadaires au même éclairage que sa tête, mais qu'il peut décider d'éteindre à son bon vouloir.
+                    Esther est d'ailleurs tout à fait capable de prendre l'apparence d'un lampadaire, mais aussi d'échanger sa place avec l'un d'entre eux tant que ce dernier est allumé.
+                    Mais le vrai point fort de cet Ichor se réside dans l'obscurité. Plus une personne se retrouve dans le noir, plus une sensation de fatigue commence à l'attaquer.
+                    Plus une personne reste, plus elle commence à sentir des picotements au niveau de ses pieds qui montent progressivement, accompagner de marque noire qui cause ces picotements.
+                    Mise à part une gêne, il ne cause aucun dégât direct, leur seul intérêt endormir les personnes affectées. Plus ces marques s'étendent, plus une sensation fatigue deviens importante.
+                    Une fois que les marques atteignent la colonne vertébrale d'une personne, cette dernière commencera à s'endormir totalement.
+                  </p>
+                  <p class="text-justify">
+                    Les marques mettent 4 tours avant d'atteindre la colonne et une fois atteinte, il faut encore 2 tours de plus pour endormir totalement la personne.
+                    Pour faire partir les marques, il suffit simplement de se tenir dans la lumière des lampadaires ou d'Esther.
+                    Cela demande deux fois moins de temps de faire partir les marques que de les gagner. Si la marque a totalement atteint la colonne, il faudra seulement 2 tours pour les faire disparaître.
+                  </p>
+                </div>
+                <div id="style" class="detailBox position-absolute w-100 h-100 p-4 overflow-auto d-none pt-0 text-justify">
+                  <div class="detailClose w-100 pb-2 sticky-top pt-3" data-target="style" style="background-color: black;"><a href="#">◄ Retour</a></div>
+                  <p class="text-justify">
+                    Esther est habitué à se battre aux poings. Ayant pratiqué la boxe pendant qu'il était encore humain, malgré son handicape.
+                    Mais une fois transformer en Damned, Esther a pris le temps de perfectionné sa maîtrise aussi bien de ses poings que de ses pieds.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 position-relative" style="height: inherit; overflow: hidden;">
+              <div class="h-100 d-flex align-items-center">
+                <div class="lecteur m-auto">
+                  <div class="d-flex flex-column w-100 h-100">
+                    <div class="w-100 py-4 px-3">
+                      <div class="bg-white w-100 h-100 d-flex flex-column justify-content-between">
+                        <div class="w-100 my-2"></div>
+                        <div class="w-100 d-flex justify-content-center">
+                          <img id="discMp3" src="../../../assets/img/disc.png" alt="cd" class="cd rounded rounded-circle" style="width: 60%; height: auto;">
+                        </div>
+                        <audio id="ost" controls loop style="width: inherit;">
+                          <source src="../../../assets/musique/esther-nuci/Title Theme - Hallowed Nights (Dont Starve Together OST).mp3" data-src="../../../assets/musique/esther-nuci/Ghost & Kozmos - Tetris Theme [Electro Swing Remix].mp3" type="audio/mpeg">
+                        </audio>
+                      </div>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center align-items-center mb-4" style="height: fit-content;">
+                      <div class="rounded rounded-circle d-flex align-items-center flex-column text-center" style="background-color: rgb(50, 50, 50); height: fit-content; width: fit-content;">
+                        <div class="px-3 py-2 my-auto">M</div>
+                        <div class="d-flex">
+                          <div class="px-3 py-2 my-auto toggleNext" style="cursor: pointer;">⏮</div>
+                          <div id="player" class="my-auto px-3 py-2 border border-1 border-dark rounded rounded-circle" style="cursor: pointer;">⏯</div>
+                          <div class="px-3 py-2 my-auto toggleNext" style="cursor: pointer;">⏭</div>
+                        </div> 
+                        <div class="px-3 py-2 my-auto">VOL</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-1"></div>
+    </div>
+  </main>
+
+  <footer id="footer" class="footer mt-auto">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>©<strong class="px-1 sitename">2024 NessGaster</strong></p>
+        <div>Image par <a href="https://meteosprite.tumblr.com">The-Kitten-Crisis</a></div>
+        <div>
+          Musique par <a href="https://youtu.be/zwBGqOB282o?list=OLAK5uy_kXmzBLsS7edKwSxJHXLX_jEkdHjyw_QiA">ShogunF</a>
+        </div>
+      </div>
+
+  </footer>
+
+</body>
+
+</html>

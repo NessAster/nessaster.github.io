@@ -20,10 +20,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let tmpSource = source.src;
         let tmpDisc = discMp3.src;
         source.src = source.dataset.src;
-        discMp3.src = discMp3.dataset.src;
-
         source.dataset.src = tmpSource;
-        discMp3.dataset.src = tmpDisc;
+        if(discMp3.dataset.src) {
+            discMp3.src = discMp3.dataset.src;
+            discMp3.dataset.src = tmpDisc;
+        }
+
         music.load();
         if(played) {
             music.play();
