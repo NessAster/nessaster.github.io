@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NessWeb</title>
+  <meta property="og:title" content="NessWeb - Rika Kytayama" />
+  <meta property="og:image" content="../../assets/img/emma/emmaBanner.png" />
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../../assets/img/favicon.png" rel="icon">
+  <link href="../../../assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+  <!-- Main CSS File -->
+  <link href="../../../assets/css/main.css" rel="stylesheet">
+  <link href="../../../assets/css/rika.css" rel="stylesheet">
+  <link href="../../../assets/css/lecteur.css" rel="stylesheet">
+
+  <script src="../../../assets/js/audio-set.js"></script>
+  <script src="../../../assets/js/gwen.js"></script>
+</head>
+
+<body class="index-page d-flex flex-column vh-100 overflow-hidden">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../../../index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">NessGaster</h1>
+      </a>
+
+    </div>
+  </header>
+
+  <main class="main flex-grow-1 bg-dark overflow-auto pb-0">
+    <div class="row mt-4 w-100">
+      <div class="col-lg-2 col-1"></div>
+      <div class="col-lg-8 col-10">
+        <div class="d-flex justify-content-end">
+          <div class="book" id="book">
+            <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="translate: -100%;">
+              <div class="lecteur">
+                <div class="d-flex flex-column w-100 h-100">
+                  <div class="w-100 py-4 px-3">
+                    <div class="bg-white w-100 h-100 d-flex flex-column justify-content-between">
+                      <div class="w-100 my-2"></div>
+                      <div class="w-100 d-flex justify-content-center">
+                        <img id="discMp3" src="../../../assets/img/disc.png" data-src="../../../assets/img/emma/lul.png" alt="cd" class="cd rounded rounded-circle" style="width: 60%; height: auto;">
+                      </div>
+                      <audio id="ost" controls loop style="width: inherit;">
+                        <source src="../../../assets/musique/rika/Glitchtale OST - Melancholy [JRock Remix].mp3" data-src="../../../assets/musique/Spider Dance.mp3" type="audio/mpeg">
+                      </audio>
+                    </div>
+                  </div>
+                  <div class="w-100 d-flex justify-content-center align-items-center mb-4" style="height: fit-content;">
+                    <div class="rounded rounded-circle d-flex align-items-center flex-column text-center" style="background-color: rgb(50, 50, 50); height: fit-content; width: fit-content;">
+                      <div class="px-3 py-2 my-auto">M</div>
+                      <div class="d-flex">
+                        <div class="px-3 py-2 my-auto toggleNext" style="cursor: pointer;">⏮</div>
+                        <div id="player" class="my-auto px-3 py-2 border border-1 border-dark rounded rounded-circle" style="cursor: pointer;">⏯</div>
+                        <div class="px-3 py-2 my-auto toggleNext" style="cursor: pointer;">⏭</div>
+                      </div> 
+                      <div class="px-3 py-2 my-auto">VOL</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page cover" id="coverFront" style="z-index: 9;">
+              <div class="front text-center d-flex flex-column align-items-center justify-content-between">
+                <div class="addon"></div>
+                <div class="h-50 position-relative">
+                  <img src="../../../assets/img/emma/med.png" alt="DCA" class="w-100 position-absolute start-50 translate-middle" style="top: 95%">
+                  <div class=" w-100 mt-4 h-25 row">
+                    <img src="../../../assets/img/polaroid.png" style="background-image: url(../../../assets/img/emma/cardDeux.png); rotate: 28deg; translate: 25%;" alt="gwen" class="polaroidFrame col-6">
+                    <img src="../../../assets/img/polaroid.png" style="background-image: url(../../../assets/img/emma/cardUn.png); rotate: -15deg;" alt="gwen" class="polaroidFrame col-6">
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <h3>Dossier n°<span style="background-color: black; color: black;">......</span></h3>
+                  <p>Emma Grimm</p>
+                </div>
+              </div>
+              <div class="back">
+                <div class="addon"></div>
+              </div>
+            </div>
+            <div class="page" id="page1" style="z-index: 8;">
+              <div class="front d-flex flex-column align-items-center">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-primary border border-dark py-3">
+                    <h4 class="text-decoration-underline fw-bold">Rapport Médicale et d'Aptitude.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-primary border border-dark p-0 d-flex justify-content-center">
+                    <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <h2>Emma Grimm</h2>
+                  <div class="row w-100 m-0">
+                    <div class="col-7 p-0" style="font-size: 14px;">
+                      <p><span class="fw-bold text-decoration-underline">Âge :</span> 28 ans</p>
+                      <p><span class="fw-bold text-decoration-underline">Origine :</span> Anglaise</p>
+                      <p><span class="fw-bold text-decoration-underline">Race :</span> Maudite</p>
+                      <p><span class="fw-bold text-decoration-underline">Sexe :</span> F</p>
+                      <p><span class="fw-bold text-decoration-underline">Couleurs des yeux :</span> Rouge</p>
+                      <p><span class="fw-bold text-decoration-underline">Grade :</span> N/A</p>
+                      <p><span class="fw-bold text-decoration-underline">Rand d'Anomalie :</span> N/A</p>
+                    </div>  
+                    <img src="../../../assets/img/polaroid.png" style="background-image: url(../../../assets/img/emma/base.png); rotate: 12deg;" alt="gwen" class="polaroidFrame col-5">
+                  </div>
+                  <div class="w-100 mt-2 border border-1 border-primary"></div>
+                  <h5 class="fw-bold mt-4 text-decoration-underline">Description physique :</h5>
+                  <p style="text-align: justify;">
+                    Emma possède des cheveux rouges et longs, descendant jusqu’à ses épaules. Elle mesure 1 mètre 71 pour un poids de 59 kilogrammes.
+                    Son œil gauche aussi est d’une légère lueur rougeoyante. Pour ce qui est de son style vestimentaire, Emma préfère rester sobre, dans des ton noir, gris,
+                    blanc et rouge la plus part du temps, avec des tenus relativement ordinaire, si l’ont met de côté son bandeau qu’elle porte sur son œil droit.
+                    Pour ce qui est de ses particularités physiques, la plus évidente est les pattes d’araignées qui sortent de son dos. Elles sont au nombre de quatre,
+                    fonctionnelles avec de simples petit crochet pointu au bout de ces derniers. Elles sont plus longue que ses bras de la  longueur d’une main,
+                    sinon elle n’ont pas de grand particularité, mise à part leur poile noir et rouge qui les recouvre. La plupart du temps elle cache ses pattes sous ses vêtements,
+                    mais elle peut facilement les sortir par des ouvertures qu’elle a recousu sur le dos de ses vêtements. Elle porte généralement des pulls ou des vestes pour cacher au maximum cette partie d’elle.
+                    Le second détail le plus flagrant est son cache œil derrière lequel il lui manque un œil, il ne reste que de vilaines cicatrices de chair brûlée et coupée.
+                  </p>
+                </div>
+              </div>
+              <div class="back d-flex flex-column align-items-center">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-primary border border-dark py-3">
+                    <h4 class="text-decoration-underline fw-bold">Rapport Médicale et d'Aptitude.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-primary border border-dark p-0 d-flex justify-content-center">
+                    <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <h3 class="fst-italic text-end fw-bold text-decoration-underline">Caractère mental :</h3>
+                  <div class="w-100 border border-1 border-primary"></div>
+                  <p style="text-align: justify;">
+                    Emma est une personne relativement calme, souvent souriante. Elle ne porte jamais attention aux apparences et elle est toujours prête à aider les personnes qui sont dans le besoin.
+                    On peut facilement dire qu’elle a un cœur et un or. Bien qu’elle semble réservée, elle  n’a pas vraiment peur des autres, mais plus d'elle-même,
+                    que ce soit à cause de son apparence ou des différentes mutilations qui marquent encore son corp. Que ce soit son œil en moins certaine cicatrice et la langue coupée.
+                    Elle ne possède pas la plus grande confiance qui soit, en tout cas, quand on sort du cadre de sa profession. Elle change du tout au tout quand il s’agit du point de vue médical.
+                    À ce moment-là elle porte un tout autre masque, plus sérieux et direct, avec une grande confiance qu’elle s’est façonné au fil des années. Pour ce qui est de ses défauts, on pourrait
+                  </p>
+                  <div class="row">
+                    <div class="col-5"><img src="../../../assets/img/polaroid.png" style="background-image: url(../../../assets/img/emma/caracter.png); rotate: -9deg;" alt="gwen" class="polaroidFrame col-4 w-100"></div>
+                    <p style="text-align: justify;" class="col-7">
+                      Mais s'il y a bien une chose qui la met hors d'elle, ce sont bien les personnes qui ne l'écoute pas. Elle a beau être gentille et peu sur d'elle, dans le cadre médicale,
+                      il vaut mieux ne pas se la mettre dos. Il n'y a rien de plus dangereux qu'un soigneur allier qui aurait une dent contre quelqu'un.
+                    </p>
+                  </div>
+                  <div class="w-100 border border-1 border-primary mb-2"></div>
+                  <h3 class="fst-italic text-end fw-bold text-decoration-underline pt-2">Information complémentaire :</h3>
+                  <div class="row mt-2">
+                    <p class="col-12"><span class="fw-bold text-decoration-underline">Raison d’être :</span> Être médecin spécialisé en chirurgie</p>
+                    <p class="col-12"><span class="fw-bold text-decoration-underline">Objectif :</span> Soigner les gens</p>
+                    <p class="col-12"><span class="fw-bold text-decoration-underline">Capacité en combat :</span><br>Elle connaît les bases du self défense mais ça s’arrête là.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page" id="page2" style="z-index: 7;">
+              <div class="front d-flex flex-column align-items-center">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-success border border-dark py-3">
+                    <h4 class="text-decoration-underline fw-bold">Rapport de capacité de la Maudite.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-success border border-dark p-0 d-flex justify-content-center">
+                    <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <h3 class="fst-italic text-end fw-bold text-decoration-underline">Chimeria :</h3>
+                  <div style="text-align: justify;">
+                    L’ichor qu’à développer Emma est lié à sa modification corporel. Le mélange d’un dégoût et de l’acceptation de sa condition d’arachnide.
+                    En plus des quatres pattes d’araignées qu’elle possèdes dans son dos, qui ont chacune des crochets avec un côté légèrement tranchant.
+                    Mais dans les crochet des pattes supérieur, elle est capable de tisser de la ficelle de soie, de l’ordre du millimètre à un centimètre,
+                    les fils sont aussi résistants que des fils de fer. Pour ce qui est des pattes inférieures, elle est capable de sécréter un anesthésiant,
+                    il n’est pas assez puissant pour causer une grosse anesthésie directement, mais suffisant pour ne pas sentir les crochets.
+                  </div>
+                  <!-- <div class="row mt-2">
+                    <div class="col-9" style="font-size: 15px; text-align: justify">
+                      Entre une douleur plus qu’insupportable et un impossibilité de bouger ce dit membre pendant toute une semaine, ainsi qu’une douleur persistante pendant cette semaine entière.
+                      Autant dire qu’elle n’est pas vraiment prête pour se servir de cette capacité souvent. Mais ce pouvoir comporte tout de même un second aspect, tout aussi lié aux cendres.
+                      
+                    </div>
+                    <img src="../../../assets/img/polaroid.png" style="background-image: url(../../assets/img/rika/Scorched_Girl_Rodion_Portrait.png); rotate: 8deg;" alt="gwen" class="polaroidFrame col-3">
+                  </div> -->
+                </div>
+              </div>
+              <div class="back d-flex flex-column align-items-center">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                    <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                    <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <h3 class="fst-italic text-end fw-bold text-decoration-underline">Histoire :</h3>
+                  <p style="text-align: justify;">
+                    Emma naquit dans une petite ville au sud de l'Angleterre. Elle avait comme famille deux parents et un grand frère. Malgré les terreurs des Damneds et de la guerre qui était arrivée, cette ville était  relativement calme et épargnée par tous ces problèmes, mais l’atmosphère générale restait pesante pour rappeler que le monde n’était en rien en paix. Mais la vie continuait son cours, il le fallait. Emma avait une vie calme et un grand frère protecteur. Une vie calme et paisible dans un monde froid et grisâtre, surtout quand des cas maudits commençaient à se faire connaître. Heureusement cette petite famille n’était pas sujet à un fardeau. Emma et son grand frère étaient tous deux scolarisés. Une vie comme si aucun problème n’avait jamais existé, en tout cas du point de vue d’une fillette de 6 ans. Même le cas des maudits restait toujours délicat et une terreur que beaucoup partageait. Dans cette même école, il y avait déjà eu quatre cas officiellement recensé et cinq autres cas supposés, tous des élèves qui ne se sont jamais représenté en cours. Une angoisse grandissait à chaque nouvel absent, qui tombait avec le temps, avant de revenir par une autre absence.
+                  </p>
+                  <p style="text-align: justify;">
+                    Malheureusement, il n’y avait aucun remède à cette maladie bien trop dangereuse et inconnue. Généralement le frère d’Emma essayait toujours d’aborder d’autre sujet pour éviter à soeur de trop penser à ces problèmes. Mais un jour, tout reviendra être drastiquement différent.
+                  </p>
+                  <p style="text-align: justify;">
+                    L'arrivée d’une nouvelle élève venue de l’étrangé. Peu de gens déménageaient dans cette petite ville, elle n’était ni trop connue, ni oubliée, mais elle n’avait absolument aucune spécificité qui pourrait amener des touristes ou de nouveaux habitants, alors quand cela arrivait, les bruits couraient vite.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="page" id="page3" style="z-index: 6;">
+              <div class="front">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                    <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                    <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    Et cette nouvelle venue fut inscrite dans la faculté que le frère d’Emma. Emma et son frère Théo, eurent l’occasion de la croiser et de parler quelques fois avec cette nouvelle venue aux cheveux dorés, étant donnée qu’elle était dans la même classe que Théo. Elle semblait plutôt gentille et attentionnée, surtout toujours souriante.
+                  </p>
+                  <p style="text-align: justify;">
+                    Sauf que peu après l'arrivée de cette Claire, des rumeurs commençaient à apparaître, comme quoi elle avait dû quitter sa ville natale car elle était une maudite. Ainsi qu’une soudaine absence de plusieurs jours durant le cours de l’année n’avait pas arrangé son cas. Hélas, ou heureusement pour elle, impossible de le savoir sans preuve concrète. Les enfants ne faisaient que spéculer et les adultes ne prenait ça que comme des enfantillages et une certaine paranoïa qui s'installait depuis un certain temps. Mais du peu qu’Emma connaissait cette Claire, elle ne pouvait se dire qu’elle était maudite, à moins qu’elle ne soit vraiment, mais alors ce serait le jugement sur les maudits qui serait faux ? Dans les deux cas, elle ne la connaissait que de loin, et son frère préférait éviter de parler de tout ce qui était maudit, pour éloigner sa sœur de tous ces problèmes.
+                  </p>
+                  <p style="text-align: justify;">
+                    Un beau jour, alors que le soleil battait à son plein, que la brise du vent était assez calme pour ne pas être dérangeante et assez forte pour rafraîchir la chaleur tapante du soleil. Un jour magnifique pour un spectacle. Ce fut les paroles d’un homme qui avait laissé ses mots s’échapper alors qu’Emma et Théo se dirigeaient vers leur école. Un échange de regard s’était fait lorsque l’homme s’était éloignée de quelques pas, mais cet échange n'aboutit absolument à rien. Les deux continuèrent leur chemin.
+                  </p>
+                </div>
+              </div>
+              <div class="back">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                      <h4 class="text-decoration-underline fw-bold">Dossier personnel :</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                      <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    La journée commençait comme toutes les autres, sous une journée ensoleillée et paisible. À un seul détail près. Un homme qui se trouvait au milieu de la cours de cours qui reliait l’école à la faculté. Un homme habillé de manière chic, un haut de forme, une veste de costume et un pantalon bordeau avec des motifs rouges plus clairs au niveau de son pantalon. Les professeurs redemandaient l’attention des élèves intrigués par l’homme dont le visage était caché par son chapeau. Mais d’un instant à l’autre, l’homme à l’extérieur avait tout juste disparu, sans laisser la moindre trace.
+                  </p>
+                  <p style="text-align: justify;">
+                    Le cours repris rapidement sa lancée, mais pour Emma c’était encore un détail étrange aujourd’hui. Surtout, que cet homme, elle l’avait déjà vue, c’était le même qui parlait de spectacle plus tôt, probablement un nouveau professeur qui voulait faire bonne impression avec une tenu tape à l'œil.
+                  </p>
+                  <p style="text-align: justify;">
+                    Avant que la fin des cours ne viendra sonner, Emma commencera à se relever son siège avant qu’une première personne ne sorte de la salle et qu’un silence assourdissant ne commence à remplir l’entièreté du lieu. Un silence causé par une forte odeur de fer qui traînait dans l’air et qui s’était engouffré dans la salle de classe au moment où la porte s’était ouverte. Le silence viendra vite être coupé par un fraqua, celui d’un sac tombant au sol. Tandis que le premier élève était en train de fuir à l’opposé de la sortie qu’il ne trébuche sur ses propres affaires, se fracassant le crâne contre le sol lisse de la pièce qui commençait à se teinter de rouge et plus aucun mouvement. Oui il était bien mort, alors qu’un homme viendra, probablement la cause de cette mort, entra dans la salle de classe, le même homme que celui se trouvait à l’extérieur, un masque de porcelaine, arborant un immense sourire, exactement le même que l’on pourrait retrouver sur les masques cliché que l’on associe au théâtre.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="page" id="page4" style="z-index: 5;">
+              <div class="front">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                    <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                    <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    -”Quel dommage. Une vie perdue sans aucune grâce. Mais ce désespoir était satisfaisant à regarder.”
+                  </p>
+                  <p style="text-align: justify;">
+                    Ce fut les premiers mots que rapporta l’homme, ils avaient clairement marqué l’esprit d’Emma. Alors qu’une panique générale se prolifère, tandis que les enfants se mettront tous au fond de la salle, Emma comprise et que leur professeur viendra se placer juste devant les enfants. Des reniflements, des sanglots, des pleurs, commençaient à remplacer ce profond silence. Une terreur totale et l’homme qui commençait un monologue sur la beauté de la peur. Il n’y avait aucun doute pour se dire que son masque représentait sûrement le visage qu’il faisait, mais le détail le plus étrange était que cette odeur de fer provenait de cet homme. Un fer rouillé, alors qu’il se rapprochait lentement dans un monologue des plus troublants. Il disait être la recherche d’une femme. Une jeune femme qui se trouvait dans cette faculté. Hors ce bâtiment n’était pas celui de la faculté et le professeur ne manqua pas de le faire remarquer. Pour quelle raison ? Protéger les enfants. Ou du moins c’est ce que l’on pourrait croire. La vraie raison est qu’il voulait en priorité sauver sa vie.
+                  </p>
+                  <p style="text-align: justify;">
+                    -”je ne suis points idiot. Confondre enfants et jeunes adultes. La terreur ne se dessine pas de la même manière sur leur visage après tout.”
+                  </p>
+                  <p style="text-align: justify;">
+                    Sur la fin de ses paroles, l’homme avait disparu, ne laissant encore une fois aucune trace, seul l’enfant qui était mort de lui-même et l’odeur de fer témoignait de son passage. Du moins avant que sa voix ne se fasse à nouveau entendre et d’un peu plus près cette fois-ci, l’homme qui se tenait devant les enfants et juste devant le professeur, la main droite littéralement posée sur son cœur, tandis que son bras le traversait de part en part.
+                  </p>
+                </div>
+              </div>
+              <div class="back">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                      <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                      <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    -”Au vu de ce que vous venez de faire, je pense que vous n’en avez plus besoin.”
+                  </p>
+                  <p style="text-align: justify;">
+                    Ce professeur était maintenant littéralement sans cœur, laissant des vomissements se faire entendre, encore plus de sanglots. Des enfants étaient allongés sur le sol inconscient, d’autre recroquevillé sur eux même et d’autres totalement paralysé. Mais surtout trois dés élèves les plus paniqués commençaient à voir leurs bras, leurs jambes et tous leurs corps se mettre à se déformer. Oui certains se transformaient en maudits ou bien directement en damneds, dans les deux cas la scène était horrible à regarder pour des enfants. Seuls ceux qui étaient paralysé, qui n’essayaient même pas de comprendre et qui s'étaient résignés étaient les plus chanceux.
+                  </p>
+                  <p style="text-align: justify;">
+                    Pour ce qui est de ceux qui se transformaient, leur transformation n'eut même pas le temps de s’achever, que l’homme masqué arrêta leurs calvaire avec un simple soupire et longue lame translucide, comme du verre mal lavé. L’homme s’approcha alors des enfants qu’il regarda un à un au travers son masque, un silence, couvert de simples sanglots. Ceux qui pleuraient à chaudes larmes essayaient tant bien que mal d’arrêter pour essayer de se faire oublier.
+                  </p>
+                  <p style="text-align: justify;">
+                    -”Tu semble la plus innocente de tous. Ce sera largement suffisant pour qu’elle vienne.”
+                  </p>
+                  <p style="text-align: justify;">
+                    Ce furent ces mots qui ramenèrent Emma à la réalité, alors qu’un cri sortit de sa bouche pour demander à l’aide, mais aucun mouvement, elle ne pouvait en vouloir à personne, qui pourrait faire quoi que ce soit. Elle ne pouvait que subir, venant se faire tirer par le poignet pour se faire relever et de se faire frapper dans la nuque pour qu’elle ne s’évanouisse.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="page" id="page5" style="z-index: 4;">
+              <div class="front">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                    <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                    <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    Le rapport de la police, racontait que dans cette école, une classe entière fut décimée, les cadavres positionnés de sorte à former un visage souriant. Une signature qu’il avait déjà recensée dans la ville voisine. Celle d’un Damned qui se fait appeler Jack, reconnaissable par ce visage souriant qu’il laisse derrière tout ses passages. Certaines victimes avaient le cœur arraché et à moitié dévoré. Seule l’école fut touchée, la faculté n'eut aucune visite de cet homme masqué, le bilan comptait une vingtaine de morts et deux disparitions, dont l’une était Emma et l’autre un enfant de la faculté, son frère. Hors de cette école, les parents de ces deux enfants furent portés disparus.
+                  </p>
+                  <p style="text-align: justify;">
+                    C'est à ce jour qu’Emma commence à vivre un enfer de plus d’un mois. Elle viendra se réveiller dans une salle fermée, dont la seule lumière était une petite lanterne qui se trouvait dans un coin de la pièce. La fillette était paniquée, mais heureusement elle n’était pas blessée, contrairement à son frère, qui se trouvait juste à côté d’elle, les mains tranchées net et le regard sans vie. Il était clair qu’il était mort d'hémorragie. Et au milieu de cette salle se trouvait l’homme au masque de fer, l’enfant se tétanisa à la simple vue de cet homme, sa vision troublée et la douce voix de l’homme qui raisonnait dans la salle.
+                  </p>
+                    -”Tu ne risques absolument rien. Tant que tu ne tente rien de stupide.”
+                  </p>
+                  <p style="text-align: justify;">
+                    L’enfant était encore une fois tétanisé, se retrouvant dans une pièce seul face à cet homme qui avait massacré des personnes devant elle. Même si elle n’avait rien à cause de son état de panique, elle s’était tout de même rendu compte de ce qu’il s'était passé. Elle commençait peu à peu à retourner dans cet état de panique.
+                  </p>
+                </div>
+              </div>
+              <div class="back">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                      <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                      <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    Jusqu’à ce que l’homme ne claque de doigts, attirant son attention quelques instants avant qu’elle ne retourne son regard en direction du cadavre de son frère qui avait simplement disparu, bien que les traces de sang soient restées. Cet homme semblait presque être un magicien, ou en tout cas, très fort en mise en scène. Et l’homme restait immobile, assis sur une chaise en bois, sans un mot, sans un geste, ne laissant que les tics de l’horloge se faire entre entre les respirations saccadées de la fillette.
+                  </p>
+                  <p style="text-align: justify;">
+                    Le temps passait, les minutes, les heures, les jours, sans que rien ne se passe. L’homme disparaissait de temps en temps, avant de revenir sur ce même siège, apportant de la nourriture. Plus le temps passait, moins elle arrivait à comprendre cet homme au sourire. Bien qu’elle était toujours mal à l’aise, terrifiée et enragée de ce qu’il avait fait à son frère. Et quand bien qu'elle essayait de lancer une conversation avec l’homme au masque, elle ne reçut que du silence. Elle passait ses journées recroqueviller dans un coin, sanglotant parfois, dormant d'autrefois, ou grelottant tout simplement.
+                  </p>
+                  <p style="text-align: justify;">
+                    Elle ne voulait qu’une chose, se réveillé, elle n’arrivait plus rien à réaliser, pourquoi elle, pourquoi lui, pourquoi tout ça. Son cerveau venait à isoler des parties de sa mémoire pour essayer de la protéger. Tandis qu’un jour, elle viendra se réveiller assise sur une chaise, attaché à cette dernière et les yeux couvert d’un bout de tissus, alors qu’elle viendra commencer à attendre une personne parler, une personne qu’elle avait déjà entendu, non pas l’homme au masque mais cette fameuse nouvelle élève, Claire. Maintenant elle comprenait, c’était elle la cible de l’homme au grand sourire et elle semblait le supplier de non pas la libérer elle, mais de libérer Emma. C’était pour cela que c’était elle qui avait été enlevée et pas Claire, car cette dernière est prête à se sacrifier pour les autres.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="page" id="page5" style="z-index: 3;">
+              <div class="front">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                    <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                    <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    Probablement qu’elle souffre plus en voyant les autres souffrir qu’elle-même. Et ça, Emma viendra bien l’expérimenter. Elle laissa un cri s’échapper de sa bouche avant même ressentir la douleur, avant qu’elle ne ressente une décharge au niveau de la cuisse gauche suivie d’une forte chaleur qui commençait à couler le long de sa jambe, chaleur qui devint rapidement une froideur. Alors qu’elle se mettait à pleurer à cause de la douleur, elle sentait sa jambe la faire souffrir de plus en plus, sentant comme ver se tortiller à l’intérieur de cette dernière. Elle ne pouvait absolument pas savoir ce qu’elle avait, elle n'entendait que Claire qui demandait à ce que ce soit elle qui devait se faire blesser. Son bandeau commençait à se gorger de ses propres larmes, qu’elle commençait à comprendre ce qu’elle avait à sa jambe, une planté, celle d’un couteau qui remuait dans sa plaie, l'élargissant dans des bruits désagréables au possible. Mais l’homme n’était pas satisfait, il en demandait plus. Tellement que la pauvre fillette viendra sentir un bout de tissu rentrer dans sa bouche, venant écarter sa mâchoire pour ensuite tirer sa langue. Au vu de ce qu’il se passait déjà, la pauvre enfant comprenait très bien ce qu’il allait se passer, alors qu’elle hurlait de toutes ses forces au même titre que l’autre personne qui était avec elle. Un véritable supplice lorsqu’elle viendra sentir une douleur parcourir l’intégralité de son corps alors que sa bouche commençait à se réchauffer, une odeur et un goût de sang désagréable dans sa bouche. Elle venait bel et bien de se faire trancher la langue.
+                  </p>
+                  <p style="text-align: justify;">
+                    Et le calme revint pendant quelques instants, l’homme semblait avoir une nouvelle fois disparu, alors que Claire s’excusait en boucle de ce qu’il était en train d'arriver à Emma, qu’elles pourront sortir d’ici toutes les deux. 
+                  </p>
+                </div>
+              </div>
+              <div class="back">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                      <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                      <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    Mais pour la fillette, ce n’était qu’un mensonge qui visait à la rassurer, elle commençait déjà à se sentir partir lentement. Puis l’homme revint et cette fois-ci, il enleva le bandeau des yeux de la fillette, qui verra sa jambe blessée, dans laquelle se trouvait encore un couteau planté, et sa langue au sol dans une mare de sang. Elle n’avait même plus la force de crier ou de pleurer, d’autant que c’était loin d’être fini. L’homme se faisait un malin plaisir torturer ces deux personnes, que ce soit physiquement, comme psychologiquement.
+                  </p>
+                  <p style="text-align: justify;">
+                    Hors le plus dure était à venir, dans la main du masqué se trouvait une araigné, aux longues pattes rouge et corps noir qui empestait le souffre. L’homme rapprocha sa main du visage, de gamine. Elle avait beau reculer et se tortiller, rien n’y faisait, l’araignée finit par se poser sur la joue droite d’Emma et elle commença à remonter lentement jusqu’à arriver au-dessus de son œil droit. Par réflexe, l'enfant ferme ses yeux. Mais rien n’y faisait, cette image de l’araignée au-dessus de son œil était gravée dans sa rétine et alors qu’elle sentait sa paupière se faire soulever qu’une douleur aiguë et intense viendra frapper son ce même œil remontant dans tout son crâne. Son œil droit saignant d’un coup avant de s’arrêter, l'araignée ayant combler l’orbite de l'œil qu’il venait d’éclater, alors que les pattes ressortaient gigotaient hors de cet orbite. Elles gigotaient tout comme Emma qui se pilait et tordait de douleur, avant qu’elle ne tombe sur le côté à la renverse s’éclatant l’épaule droite contre le sol, probablement déboitée. Alors que la douleur commençait à remonter jusqu’à son dos, laissant sentant quelque chose se tordre et pousser dans son dos. Avant qu’elle ne finisse par voir totalement trouble, les oreilles bouchées, elle était presque inconsciente à cause de la douleur et de tout ce qu’il se passait. Elle viendra juste se mettre à sentir des secousses avant de se faire détacher puis récupérer par quelqu’un.
+                  </p>
+                  <p style="text-align: justify;">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="page" id="page5" style="z-index: 2;">
+              <div class="front">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                    <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                    <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    Impossiblement pour la gamine de comprendre ce qu’il passait, elle ne pouvait que subir, l’araignée toujours logée dans son œil droit. La dernière chose qu’elle se rappela c’était le visage d’un homme, dont elle ne distinguait que les cheveux bruns.
+                  </p>
+                  <p style="text-align: justify;">
+                    Elle finit par se réveiller peu sentant son corps trembler, une douleur à son œil droit. Alors qu’elle posa sa main sur ce dernier, ne sentant qu’un simple bandage le recouvrant, aucune pattes qui dépassait. L'araignée n’était plus là, mais elle sentait toujours quelque chose dans son dos. Quatres pattes d’araignée qui s’étaient formées. Tandis qu’elle fut accueillie par un homme au cheveux bruns, se présentant sous le nom d’Edward. Il s’agissait d’un médecin, spécialisé en chirurgie, celui qui lui avait retiré cette araignée et il viendra lui expliquer sa situation.
+                  </p>
+                  <p style="text-align: justify;">
+                    Elle venait de perdre sa langue et son œil droit. Quatre pattes d’araignées, qui s’étaient formées par le parasite, étaient restées. Le cadavre de son frère fut retrouvé et ses parents étaient encore tous deux portés disparus. La jeune fille explosa en sanglots. Elle avait vécu un enfer alors qu’elle n’était même pas la cible principale. Mais elle avait survécu, c'était le principal. Les jours passèrent alors que la fillette se rétablissait peu à peu et que la question de la suite se posait, le médecin proposa de s’occuper de l’adopter. Après tout, à cause de sa nouvelle condition, surtout de ses nouvelles pattes d’araignées dans son dos.
+                  </p>
+                  <p style="text-align: justify;">
+                    C’était une situation bien particulière, qu’elle accepta sans vraiment se poser plus de questions. Mais au moins grâce à cet homme, elle avait pu survivre. Par la suite, elle a appris que cette fille Claire avait quitté la ville. 
+                  </p>
+                </div>
+              </div>
+              <div class="back">
+                <div class="row m-0">
+                  <div class="col-9 border-1 bg-danger border border-dark py-3">
+                      <h4 class="text-decoration-underline fw-bold">Dossier personnel.</h4>
+                  </div>
+                  <div class="col-3 border-1 bg-danger border border-dark p-0 d-flex justify-content-center">
+                      <img src="../../../assets/img/emma/med.png" alt="MED" class="w-75">
+                  </div>
+                </div>
+                <div class="content">
+                  <p style="text-align: justify;">
+                    Mais elle restait toujours marquée par ces événements, elle a développé une peur bleue des masques. Elle fut tout de même très rapidement re scolarisée et elle suivit les traces de son sauveur, son père adoptif. Pendant son apprentissage, alors qu’elle s'habituait de plus en plus, elle commencera à s’approprier ces pattes d’araignée, elle viendra développer un ichor sur son trauma pour essayer d’aider les autres. Bien qu’elle se devait de cacher le plus possible sa condition de maudite, seules quelques autres médecins étaient au courant.
+                  </p>
+                  <p style="text-align: justify;">
+                    Alors pendant plusieurs années à la fin de ses études qu’elle travaille avec son père adoptif pour apprendre plus en profondeur les ficelles du métier. Finalement une proposition viendra lui être faite, de par sa condition de maudite et son désir de vouloir faire de son Ichor un outil pour sauver plus facilement des vies qu’elle fut muté à Baetyl pour exercer son métier.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="page cover" id="coverBack" style="z-index: 1;">
+              <div class="front">
+                <div class="addon"></div>
+              </div>
+              <div class="back gold-frame">
+                <div class="addon"></div>
+                <div class="h-100 position-relative">
+                  <img src="../../../assets/img/emma/med.png" alt="DCA" class="w-100 position-absolute start-50 top-50 translate-middle">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-1"></div>
+  </div>
+  <div class="w-100 d-flex flex-column align-items-center mt-4" style="background-color: black;">
+    <div>Crédit musique - <a href="https://www.youtube.com/@NyxTheShieldOFFICIAL">NyxTheShield</a></div>
+    <div>Crédit art - <a href="https://www.zerochan.net/Arairev">Arairev</a>/<a href="https://www.pixiv.net/en/artworks/67029617">sori_6403</a>/<a href="https://x.com/dl_ryu0512/status/1407322575542263815">dl_ryu0512</a>/<a href="https://x.com/fu0506ru/status/1272282920661614593/photo/2">fu0506ru</a></div>
+  </div>
+</main>
+
+<footer id="footer" class="footer mt-auto">
+    <div class="container">
+        <div class="copyright text-center">
+            <p>©<strong class="px-1 sitename">2024 NessGaster</strong></p>
+      </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
