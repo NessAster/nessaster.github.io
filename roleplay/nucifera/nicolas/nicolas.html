@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NessWeb</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../../assets/img/favicon.png" rel="icon">
+  <link href="../../../assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main CSS File -->
+  <link href="../../../assets/css/main.css" rel="stylesheet">
+  <link href="../../../assets/css/nicolas.css" rel="stylesheet">
+
+  <script src="../../../assets/js/audio-set.js"></script>
+  <script src="../../../assets/js/menu-card.js"></script>
+  <script src="../../../assets/js/nicolas.js"></script>
+</head>
+
+<body class="index-page d-flex flex-column min-vh-100">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../../../index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">NessGaster</h1>
+      </a>
+
+      <!-- <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#Accueil" class="active">Accueil<br></a></li>
+          <li><a href="#Accueil" class="active">Dice<br></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav> -->
+
+    </div>
+  </header>
+
+  <main class="main flex-grow-1 bg-dark">
+    <div class="row mt-4 w-100">
+      <div class="col-lg-2 col-1"></div>
+      <div class="col-lg-8 col-10">
+        <div class="card caracter-card">
+          <div class="row g-0">
+            <div class="col-md-8 position-relative" style="height: inherit; overflow: hidden;">
+              <img id="profileImage" style="height: 100%;" src="https://static.zerochan.net/Fujimoto.Shirou.full.619246.jpg" class="w-100 img-fluid rounded-start" alt="...">
+              <div class="position-absolute bottom -0 start-0 px-3 w-100" style="bottom: 2rem; opacity: 75%;">
+                <audio id="ost" controls loop style="width: inherit;">
+                  <source id="source" src="../../../assets/musique/nicolas/Watching the farm.mp3" data-src="../../../assets/musique/nicolas/[Remix] Second Warning × Canto Ⅰ  Battle Theme C1 [Lobotomy corp  Limbus Company].mp3" type="audio/mpeg">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-4 pb-0 d-flex justify-content-end">
+              <div class="card-body flex-grow-1">
+                <h4 class="card-title text-white mb-4 pub"><a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#authModal"><span class="text-danger fw-bold">Nicolas</span></a> Egerov Savin Strelkov</h4>
+                <h4 class="card-title text-white mb-4 censored"><span class="text-danger fw-bold">N.</span> E. S. S.</h4>
+                <div class="row">
+                  <p class="card-text col-sm-6 text-danger"><span class="text-white fw-bold">Race :</span> Maudit</p>
+                  <p class="card-text col-sm-6 text-danger"><span class="text-white fw-bold">Age :</span> 51 ans</p>
+                </div>
+                <div class="row">
+                  <p class="card-text col-sm-6 text-danger"><span class="text-white fw-bold">Métier :</span> Fermier</p>
+                  <p class="card-text col-sm-6 text-danger censored"><span class="text-white fw-bold">Métier :</span> Membre de A.B.S.E.N.C.E. Secteur Noir</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="targetCard card caracter-card mt-5 p-1" data-selected="border-white" data-unselected="border-muted">
+            <div class="card-body">
+              <div class="row gap-1 pb-3">
+                <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="personnalite"><span class="fw-bold">Mentalité</span></div>
+                <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="physique"><span class="fw-bold">Physique</span></div>
+                <div role="button" class="card-text col border-bottom border-muted border-1 cardMenu text-center" data-target="combat"><span class="fw-bold">Capacité en combat</span></div>
+              </div>
+              <div id="cardContaineur">
+                <div id="personnalite" class="d-none text-justify text-light row">
+                  <div class="col-md-8">
+                    <p>
+                      Nicolas est quelqu'un de plutôt calme, il a une bonne joie de vivre, mais il est du genre à se faire petit et discret. Non pas que la compagnie lui déplaisait ou que parler le dérange, loin de là. Il s’agit plus simplement du fait qu’il n’aime pas déranger les autres et qu’il vit la majorité du temps seule. Il s’est très vite habitué à la solitude, surtout après le décès de sa femme. Il n’a jamais perdu son sourire, ni même son sang froid et c’est un vrai acharné du travail, rien ne compte plus pour lui que ses champs et sa famille.
+                    </p>
+                    <div class="censored">
+                      <div class="warning">
+                        <div class="warning-track">
+                          <span class="text-danger fw-bold fs-4">
+                            WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                          </span>
+                        </div>
+                      </div>
+                      <p>
+                        Mis à part sa façade, Nicolas est plutôt du genre solitaire et son ichor qu’il développe par Incensura, semble partir dans ce sens. Cependant il reste un élément loyal, il discute très peu les ordre, sauf s’il voit une mission suicide arrivé. Il se comporte presque comme une machine, au même titre que son ichor.
+                      </p>
+                      <div class="warning">
+                        <div class="warning-track">
+                          <span class="text-danger fw-bold fs-4">
+                            WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="col-6">
+                        Qualités : Calme, patient, loyal, discret.
+                      </p>
+                      <p class="col-6">
+                        Défauts : Solitaire, réticent.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="https://static.zerochan.net/Fujimoto.Shirou.1024.4396939.webp" alt="physique" class="w-100">
+                  </div>
+                </div>
+                <div id="physique" class="d-none text-justify text-light row">
+                  <div class="col-md-9">
+                    <p>
+                      Nicolas est ce que l’on pourrait qualifier d’ordinaire, 1 mètre 77, 65 kilogrammes. Les cheveux blanc et court. Une barbe mal rasée. Il a une barbe tout aussi blanche mal rasée. Il a les yeux marron, il porte aussi des lunettes qui possède un cordon avec des croix proche de attache. Pour ce qui est des vêtements, il porte généralement des tenu plutôt sobre et sombre, à tendance religieuse, il pour aussi très souvent une écharpe autour du cou.
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="w-100" src="https://static.zerochan.net/Fujimoto.Shirou.1024.1267604.webp" alt="personality">
+                  </div>
+                </div>
+                <div id="combat" class="d-none text-justify text-light row">
+                  <div>
+                    <p>
+                      Nicolas n’a jamais eu l'occasion de porter une arme. Mis à part les outils de la ferme, il n’a jamais vraiment eu l’occasion de se battre.
+                    </p>
+                    <div class="censored">
+                      <div class="warning">
+                        <div class="warning-track">
+                          <span class="text-danger fw-bold fs-4">
+                            WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                          </span>
+                        </div>
+                      </div>
+                      <p>
+                        Sa façade est mise de côté. Nicolas est très habile quand il s’agit de l’utilisation d'armes à feu. Il n’est pas un as de la gâchette, mais ce n’est clairement pas son point faible. Il est surtout à l’aise avec les armes à courte et moyenne portée. Il privilégie généralement des lances ou des haches à deux mains. Même si les armes à feu restent d'une efficacité sans pareil.
+                      </p>
+                      <div class="warning">
+                        <div class="warning-track">
+                          <span class="text-danger fw-bold fs-4">
+                            WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 censored">
+          <div class="card caracter-card">
+            <div class="card-header">
+              <div class="warning">
+                <div class="warning-track">
+                  <span class="text-danger fw-bold fs-4">
+                    WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                  </span>
+                </div>
+              </div>
+              <div class="card-title h2 text-center text-danger">
+                Incensura : 
+              </div>
+              <div class="warning">
+                <div class="warning-track">
+                  <span class="text-danger fw-bold fs-4">
+                    WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body text-light">
+              <p>
+                Nicolas est capable de créer jusqu’à deux zones de quarante mètres de diamètre. Il s'agit de zones dans lesquelles un hologramme de champs de blés est projeté sur le sol et délimité par des inscription [DANGER] qui font le tours de la zone , il monte jusqu’à 50 centimètres du sol. Mais la vraie force de ce pouvoir réside dans ce qu’il se trouve dans ces zones. Au centre de ces dernières se trouve un robot humanoïde et longiforme. Ces robots n’ont rien d'anodin, ils sont les gardiens de ces zones. Ils peuvent se mouvoir comme ils le souhaitent à l’intérieur des champs, même dans l’autre zone tant que les deux sont connectées. De plus ces robots possèdes une faux de moisson adapté à leurs tailles, et de longue griffe pour leurs mains gauche, qui fait la hauteur de leurs corps. Ils mesurent facilement 2 mètres de haut, mais pour réduire les impacts avec le sol, ils ont leurs articulations en partie refermé, ils n'atteignent donc généralement pas cette hauteur.
+              </p>
+              <p>
+                Pour leurs spécifications, quand bien même ils sont détruits, ils pourront se reconstruire en un tour tant qu'ils sont dans une zone. S’il s’approche trop du bord de leurs champs, une chaîne viendra commencer à se manifester pour les relier au centre de la zone dans laquelle il se trouve pour les empêcher de partir. Ces chaînes peuvent avoir comme centre Nicolas, qui est considéré lui aussi comme une zone, ce qui fait alors que leurs rayons d’action devient mobile, mais qu’il n’en n’auront qu’un, soit les zones, soit Nicolas, mais pas les deux. Maintenant ces chaînes sont parfaitement destructibles, que ce soit pour n’importe qui, mais aussi pour les robots eux même. L'intérêt de détruire ces chaînes est qu’il n’ont plus aucune restriction de distance, mais qu’une fois détruits, ils se désagrègent, ne laissant derrière qu’une âme que seul Nicolas peut voir. De plus, Nicolas ne pourra les faire revenir que 5 tours après avoir récupéré l’âme de son invocation. Et quand Nicolas, conjure et récupère l’âme d’un robot, il récupère aussi ses souvenirs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="card caracter-card">
+            <div class="card-header">
+              <div class="card-title h2 text-center text-danger">
+                Histoire
+              </div>
+            </div>
+            <div class="card-body text-light">
+              <p>
+                Nicolas est né dans une petite famille de fermiers dans un petit village à l’Est de Baetyl. Il n’a pas réellement eu de difficulté ou quoi que ce soit d’autre. Très jeune, il fut entraîné dans le domaine agricole par ses parents. Il a  une vie dans la simplicité des champs. Il n’a pas vraiment ni la chance, ni la malchance d’aller à l’école. Son avenir était déjà tracé et ça lui va très bien. À 17 ans, il à rencontré l’amour. À 19 ans, il s’est marié À 20 puis 23 ans, il eut deux enfants. À 30 ans sa femme est morte paisiblement, emporté par la malide, rien de plus en particulier. Ses enfants sont ensuite partis à l’étranger pour rejoindre la famille de leurs mère, Nicolas, ne pouvant plus vraiment s’occuper d’eux à cause du travail qu’il menait. Et depuis, Nicolas vit seul et il ne compte pas briser cette solitude bientôt, il est encore trop dévoué à sa femme pour ca. Ses parents avaient déjà passé l’arme à gauche, il y a 5 et 3 de cela. Il est maintenant à la tête de la ferme familiale, il cultive principalement du blé, en plus de divers fruits et légumes, mais son corps de commerce est centré sur le blé. Il s’occupe d’importer ses produits à Baetyl, pour se faire un peu d’argent
+              </p>
+              <div class="censored">
+                <div class="warning">
+                  <div class="warning-track">
+                    <span class="text-danger fw-bold fs-4">
+                      WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                    </span>
+                  </div>
+                </div>
+                <p>
+                  En tout cas, c'est la façade qui lui est donnée. Il n’a jamais eu d’enfant, ni une enfance aussi facile que cela. Le seul point véridique et le fait qu’il ait eu une femme. Pour le reste, il est une des nombreuses victimes de la guerre ichorienne et de tout ce qui a bien suivi. Un enfant russe dans l’un des rares village de fortune caché dans des ruines où la mort était aussi bien vue comme une peur qu’une délivrance de cet enfer. Nicolas, n’a jamais vraiment vu ses parents, la seule main charitable qui l’a aidé s’est éteint beaucoup trop vite. Mais alors qu’il essayait de survivre tant bien que mal, en volant principalement à ceux qui se débrouiller mieux que lui. Mais très jeune il viendra être trouvé par une certaine organisation. Nicolas, n’avait ni nom, ni famille, ni attache. Même son prénom était juste un prénom qu’il s’était donné lui-même, sans même se rappeler où il a bien pu l’entendre. Il était alors parfait, un enfant soldat, qui pourra quoi qu’il arrive mourir sans que personne ne se pose de question, disparaître sans laisser de trace et sur lequel on peut facilement coller n’importe quelle histoire, un véritable enfant soldat. Il fut très vite intégrer au programme du Secteur Noir. Il fut entraîné dès son plus jeune âge et envoyé sur quelque mission. Sa dernière mission en date est de glaner des informations et surveiller le secteur périphérique de Baetyl. Depuis lors, il vit en tant que fermier religieux qui s’occupe de sa ferme. Il a cependant réussi à trouver une femme, qui malgré suspicieuse sur certaine de ses disparition, elle restait toujours avec Nicolas. Jusqu’au jour, où ce dernier reçut l’ordre de l’éliminer, avant qu’elle ne devienne une entrave. un rumeur sur des enfants fut répant bien que totalement fausse, la mort de sa femme passa pour une simple mort naturel pour crédibiliser le profile de Nicolas d’une simple personne lambda.
+                </p>
+                <div class="warning">
+                  <div class="warning-track">
+                    <span class="text-danger fw-bold fs-4">
+                      WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-1"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content border-danger" style="background-color: black;">
+          
+          <div class="modal-header border-danger">
+            <div class="warning">
+              <div class="warning-track">
+                <span class="text-danger fw-bold fs-4">
+                  WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                </span>
+              </div>
+              <h5 class="modal-title text-danger w-100 d-flex justify-content-center"><span>Authentification...</span></h5>
+              <div class="warning-track">
+                <span class="text-danger fw-bold fs-4">
+                  WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <form id="formAuth" class="modal-body border-danger">
+            <label for="user" class="text-danger">Utilisateur:</label>
+            <div>
+              <input class="w-100" type="text" name="user" id="user">
+            </div>
+            <label for="password" class="text-danger">Mot de passe :</label>
+            <div>
+              <input class="w-100" type="password" name="password" id="password">
+            </div>
+
+            <button class="mt-2" type="submit">Connexion</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer" class="footer mt-auto">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p><strong class="px-1 sitename">2024 NessGaster</strong></p>
+        <div>
+          Image par <a href="https://www.zerochan.net/1267604">Ton-ton</a>, <a href="https://www.zerochan.net/4396939">Katou Kazue</a>, <a href="https://www.zerochan.net/619246">?</a>
+        </div>
+        <div class="censored">
+          Musique par <a href="https://www.youtube.com/watch?v=JrNDEi0MIKo">tamamushi</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

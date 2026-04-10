@@ -1,0 +1,39 @@
+.censored {
+    display: none;
+}
+
+.censored.auth {
+    display: block !important;
+}
+
+.pub.auth {
+    display: none;
+}
+
+.warning {
+    overflow: hidden;
+    width: 100%;
+}
+
+.warning-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 8s linear infinite;
+    will-change: transform;
+}
+
+.warning-track span {
+    display: inline-block;
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-40%);
+    }
+}
